@@ -3,54 +3,64 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Karina Souza — People Operations & Talent</title>
+<title>Karina Souza · People Operations & Talent</title>
 <meta name="description" content="I help growing companies build high-performing teams that keep their best people. Hiring, onboarding, and the systems that make people stay.">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <!-- Social / Open Graph -->
 <meta property="og:type" content="website">
-<meta property="og:title" content="Karina Souza — People Operations & Talent">
+<meta property="og:title" content="Karina Souza · People Operations & Talent">
 <meta property="og:description" content="I help growing companies build high-performing teams that keep their best people.">
 <meta property="og:image" content="https://karinajsou810-star.github.io/rh/og-image.png">
 <meta property="og:url" content="https://karinajsou810-star.github.io/rh/">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Karina Souza — People Operations & Talent">
+<meta name="twitter:title" content="Karina Souza · People Operations & Talent">
 <meta name="twitter:description" content="I help growing companies build high-performing teams that keep their best people.">
 <meta name="twitter:image" content="https://karinajsou810-star.github.io/rh/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,600;1,700&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg:#FCFCFA; --ink:#15181E; --body:#33373F; --mut:#6B7280;
-    --line:#E6E8EC; --soft:#F6F6F2; --card:#FFFFFF;
-    --red:#E04A43; --green:#1FA971; --amber:#E0A12B; --maxw:1080px;
+    --bg:#EEE4DA;        /* creme */
+    --soft:#E4D5C2;      /* soft sand-cream for sections */
+    --card:#F5ECE1;      /* lighter warm card */
+    --sand:#D8C4AC; --pink:#C8A49F;
+    --ink:#2E1B1E;       /* deep warm near-black (headings) */
+    --body:#574442;      /* body text */
+    --mut:#90796E;       /* muted taupe */
+    --line:#DCC9B3;      /* warm border */
+    --red:#4D0E13;       /* BURGUNDY = primary accent */
+    --green:#D8C4AC; --amber:#C8A49F; --maxw:1080px;
   }
   *{margin:0;padding:0;box-sizing:border-box}
   html{scroll-behavior:smooth}
-  body{font-family:"Helvetica Neue",Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+  body{font-family:"Libre Baskerville",Georgia,serif;background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
   a{color:inherit;text-decoration:none}
   .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
   .kick{font-size:12.5px;letter-spacing:.26em;text-transform:uppercase;color:var(--mut);font-weight:700}
   .accent{color:var(--red)}
 
-  nav{position:sticky;top:0;z-index:50;background:rgba(252,252,250,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  nav{position:sticky;top:0;z-index:50;background:rgba(238,228,218,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
   nav .wrap{display:flex;justify-content:space-between;align-items:center;height:68px}
   .logo{font-weight:700;font-size:18px;letter-spacing:-.01em}
   .logo span{color:var(--mut);font-weight:400}
   .navlinks{display:flex;gap:30px;font-size:14.5px;color:var(--mut)}
   .navlinks a:hover{color:var(--ink)}
   .navcta{border:1px solid var(--red);color:var(--red);padding:9px 18px;border-radius:999px;font-size:14px;font-weight:600}
-  .navcta:hover{background:rgba(224,74,67,.07)}
+  .navcta:hover{background:rgba(77,14,19,.07)}
   @media(max-width:720px){.navlinks{display:none}}
 
-  .hero{position:relative;padding:96px 0 84px;overflow:hidden;background:linear-gradient(180deg,#fff,var(--bg))}
-  .grid{position:absolute;inset:0;background-image:linear-gradient(rgba(0,0,0,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(0,0,0,.035) 1px,transparent 1px);background-size:62px 62px;mask-image:radial-gradient(760px 480px at 80% 12%,#000 22%,transparent 78%)}
+  .hero{position:relative;padding:96px 0 84px;overflow:hidden;background:linear-gradient(180deg,#F4EBDF,var(--bg))}
+  .grid{position:absolute;inset:0;background-image:linear-gradient(rgba(77,14,19,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(77,14,19,.05) 1px,transparent 1px);background-size:62px 62px;mask-image:radial-gradient(760px 480px at 80% 12%,#000 22%,transparent 78%)}
   .hero .wrap{position:relative;z-index:2}
   h1{font-size:62px;line-height:1.05;font-weight:700;letter-spacing:-.03em;margin:22px 0 0;max-width:880px;color:var(--ink)}
-  .lede{margin-top:24px;font-size:21px;color:var(--mut);max-width:680px;font-weight:400}
+  .lede{margin-top:24px;font-size:21px;color:var(--body);max-width:680px;font-weight:400}
   .herobtns{margin-top:38px;display:flex;gap:14px;flex-wrap:wrap}
   .btn{padding:14px 26px;border-radius:999px;font-weight:600;font-size:15.5px;display:inline-block}
-  .btn-primary{background:var(--red);color:#fff}
-  .btn-primary:hover{background:#cf403a}
-  .btn-ghost{border:1px solid #D6D9DE;color:var(--ink)}
-  .btn-ghost:hover{border-color:#B9BDC4}
+  .btn-primary{background:var(--red);color:#F6ECE0}
+  .btn-primary:hover{background:#67121b}
+  .btn-ghost{border:1px solid #C8B49B;color:var(--ink)}
+  .btn-ghost:hover{border-color:var(--red)}
   .scale{margin-top:46px;display:flex;gap:12px;flex-wrap:wrap}
   .pill{display:flex;align-items:center;gap:9px;padding:10px 17px;border:1px solid var(--line);border-radius:999px;font-size:14px;color:var(--body);font-weight:500;background:var(--card)}
   .dot{width:9px;height:9px;border-radius:50%}
@@ -63,43 +73,59 @@
 
   /* ABOUT ME with photo */
   .about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:50px;align-items:center}
-  .about-photo img{width:100%;border-radius:18px;border:1px solid var(--line);display:block}
+  .about-photo img{width:100%;border-radius:18px;display:block;box-shadow:0 26px 60px -30px rgba(77,14,19,.40)}
   .about-txt p{color:var(--body);font-size:17px;margin-bottom:16px}
   .about-txt p b{color:var(--ink);font-weight:700}
   .facts{margin-top:22px;display:grid;grid-template-columns:1fr 1fr;gap:10px}
   .fact{border:1px solid var(--line);border-radius:12px;padding:14px 16px;background:var(--card)}
-  .fact .fn{color:var(--red);font-weight:700;font-size:13px;font-family:"SF Mono",ui-monospace,Menlo,monospace}
+  .fact .fn{color:var(--red);font-weight:700;font-size:13px;font-family:"Playfair Display",Georgia,serif}
   .fact .ft{font-size:14px;color:var(--body);margin-top:4px}
   @media(max-width:720px){.about-grid{grid-template-columns:1fr;gap:30px}.facts{grid-template-columns:1fr}}
 
   .pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
   .pcard{border:1px solid var(--line);border-radius:18px;padding:32px;background:var(--card);transition:.2s}
-  .pcard:hover{border-color:var(--red);transform:translateY(-3px);box-shadow:0 18px 40px -24px rgba(20,24,30,.18)}
-  .pnum{font-family:"SF Mono",ui-monospace,Menlo,monospace;font-size:13px;color:var(--mut)}
+  .pcard:hover{border-color:var(--red);transform:translateY(-3px);box-shadow:0 18px 40px -24px rgba(77,14,19,.22)}
+  .pnum{font-family:"Playfair Display",Georgia,serif;font-size:13px;color:var(--mut)}
   .pcard h3{font-size:21px;font-weight:700;margin:14px 0 10px;letter-spacing:-.01em;color:var(--ink)}
-  .pcard p{color:var(--mut);font-size:15px}
+  .pcard p{color:var(--body);font-size:15px}
   @media(max-width:720px){.pillars{grid-template-columns:1fr}}
 
   /* CASE CARDS */
   .casecard{display:grid;grid-template-columns:1fr 1.5fr;gap:40px;align-items:center;padding:34px;border:1px solid var(--line);border-radius:20px;background:var(--card);margin-bottom:22px;transition:.2s}
-  .casecard:hover{border-color:var(--red);transform:translateY(-3px);box-shadow:0 22px 50px -28px rgba(20,24,30,.2)}
-  .cc-visual{aspect-ratio:4/3;border-radius:14px;border:1px solid var(--line);position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;background:linear-gradient(160deg,#F7F6F2,#fff)}
-  .cc-num{font-family:"SF Mono",ui-monospace,Menlo,monospace;font-size:13px;color:var(--mut);position:absolute;top:16px;left:18px;letter-spacing:.1em}
-  .cc-tag{position:absolute;bottom:16px;left:18px;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--mut);font-weight:700}
+  .casecard:hover{border-color:var(--red);transform:translateY(-3px);box-shadow:0 22px 50px -28px rgba(77,14,19,.26)}
+  .cc-visual{aspect-ratio:4/3;border-radius:14px;border:1px solid var(--line);position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;background:linear-gradient(160deg,var(--sand),#F1E6D7)}
+  .cc-num{font-family:"Playfair Display",Georgia,serif;font-size:13px;color:var(--mut);position:absolute;top:16px;left:18px;letter-spacing:.1em}
+  .cc-tag{position:absolute;bottom:16px;left:18px;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#7A5A4A;font-weight:700}
   .cc-big{font-size:38px;font-weight:700;letter-spacing:-.02em;text-align:center;padding:0 20px;color:var(--ink)}
   .ctype{font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--red);font-weight:700}
   .casecard h3{font-size:26px;font-weight:700;margin:10px 0 12px;letter-spacing:-.015em;line-height:1.2;color:var(--ink)}
   .casecard .desc{color:var(--body);font-size:16px}
-  .readlink{display:inline-block;margin-top:18px;font-weight:600;color:var(--ink);font-size:15px}
+  .readlink{display:inline-block;margin-top:18px;font-weight:600;color:var(--red);font-size:15px}
   @media(max-width:720px){.casecard{grid-template-columns:1fr;gap:22px}}
 
-  .contact{text-align:center;background:var(--soft)}
+  .contact{text-align:center;background:#EAD7D2}
   .contact h2{font-size:42px;font-weight:700;letter-spacing:-.02em;max-width:720px;margin:0 auto 18px;color:var(--ink)}
-  .contact p{color:var(--mut);font-size:18px;max-width:560px;margin:0 auto 34px}
+  .contact p{color:var(--body);font-size:18px;max-width:560px;margin:0 auto 34px}
   footer{border-top:1px solid var(--line);padding:36px 0;color:var(--mut);font-size:14px}
   footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
   footer a{color:var(--mut)}
   footer a:hover{color:var(--ink)}
+
+  h1,.sechead h2,.contact h2,.pcard h3,.casecard h3,.expcard h3,.cc-big,.logo{font-family:"Playfair Display",Georgia,serif;letter-spacing:-.01em}
+  h1 .accent,.cc-big .accent,.expcard h3 .accent{font-style:italic}
+  #work{background:#E9DBC9}
+  #cases .casecard{background:#F7EFE4}
+
+  /* EXPERIENCE */
+  #experience{background:#F1E7DA}
+  .exp-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:stretch}
+  .exp-photo img{width:100%;height:100%;max-height:560px;object-fit:cover;object-position:50% 30%;border-radius:18px;display:block;box-shadow:0 26px 60px -30px rgba(77,14,19,.40)}
+  .exp-cards{display:flex;flex-direction:column;gap:18px;justify-content:center}
+  .expcard{display:block;padding:30px 32px;border:1px solid var(--line);border-radius:18px;background:var(--card);transition:.2s}
+  .expcard:hover{border-color:var(--red);transform:translateY(-3px);box-shadow:0 20px 44px -26px rgba(77,14,19,.24)}
+  .expcard h3{font-size:25px;font-weight:700;margin:8px 0 10px;letter-spacing:-.015em;line-height:1.18;color:var(--ink)}
+  .expcard .desc{color:var(--body);font-size:16px}
+  @media(max-width:720px){.exp-grid{grid-template-columns:1fr;gap:26px}.exp-photo img{max-height:420px}}
 </style>
 </head>
 <body>
@@ -111,6 +137,7 @@
       <a href="#about">About</a>
       <a href="#work">What I do</a>
       <a href="#cases">Case studies</a>
+      <a href="#experience">Experience</a>
     </div>
     <a href="#contact" class="navcta">Let's talk</a>
   </div>
@@ -122,14 +149,14 @@
   <div class="wrap">
     <div class="kick">People Operations &amp; Talent</div>
     <h1>I help growing companies build high‑performing teams that <span class="accent">keep their best people.</span></h1>
-    <p class="lede">Hiring for fit, onboarding that works from day one, and the systems that keep teams aligned — and good people from quietly leaving.</p>
+    <p class="lede">Hiring for fit, onboarding that works from day one, and the systems that keep teams aligned, and good people from quietly leaving.</p>
     <div class="herobtns">
       <a href="#contact" class="btn btn-primary">Work with me</a>
       <a href="#cases" class="btn btn-ghost">See case studies</a>
     </div>
     <div class="scale">
-      <div class="pill"><span class="dot" style="background:var(--green)"></span>Attract</div>
-      <div class="pill"><span class="dot" style="background:var(--amber)"></span>Engage</div>
+      <div class="pill"><span class="dot" style="background:var(--sand)"></span>Attract</div>
+      <div class="pill"><span class="dot" style="background:var(--pink)"></span>Engage</div>
       <div class="pill"><span class="dot" style="background:var(--red)"></span>Retain</div>
     </div>
   </div>
@@ -140,13 +167,13 @@
   <div class="wrap">
     <div class="sechead">
       <div class="kick">About me</div>
-      <h2>Teams aren't just hired. They're built — and kept.</h2>
+      <h2>Teams aren't just hired. They're built, and kept.</h2>
     </div>
     <div class="about-grid">
-      <div class="about-photo"><img src="karina-photo.jpg" alt="Karina Souza — People Operations & Talent"></div>
+      <div class="about-photo"><img src="karina-photo.jpg" alt="Karina Souza · People Operations & Talent"></div>
       <div class="about-txt">
-        <p>I'm <b>Karina Souza</b>, a People Operations &amp; Talent specialist. Companies rarely lose their best people over pay — they lose them because hiring, onboarding, and everyday team life were never built to keep them.</p>
-        <p><b>I help growing companies fix that.</b> Across recruitment, onboarding, team coordination, and operations, I've learned that high‑performing teams come down to a few things done consistently well — hiring the right people, getting them productive fast, and building the systems that keep a team together.</p>
+        <p>I'm <b>Karina Souza</b>, a People Operations &amp; Talent specialist. Companies rarely lose their best people over pay, they lose them because hiring, onboarding, and everyday team life were never built to keep them.</p>
+        <p><b>I help growing companies fix that.</b> Across recruitment, onboarding, team coordination, and operations, I've learned that high‑performing teams come down to a few things done consistently well, hiring the right people, getting them productive fast, and building the systems that keep a team together.</p>
         <p>I work with startups, consultancies, agencies, and international teams that can't afford to lose the people they worked hard to hire.</p>
         <div class="facts">
           <div class="fact"><div class="fn">01</div><div class="ft">Recruitment &amp; candidate fit</div></div>
@@ -164,13 +191,13 @@
   <div class="wrap">
     <div class="sechead">
       <div class="kick">What I do</div>
-      <h2>The full people journey — not one piece of it.</h2>
+      <h2>The full people journey, not one piece of it.</h2>
       <p>From the first hire to the team that stays, I put the foundations in place.</p>
     </div>
     <div class="pillars">
-      <div class="pcard"><div class="pnum">01</div><h3>Hire for fit</h3><p>Structured screening and candidate matching that finds the right person, not just the available one — and sets the relationship up to last.</p></div>
+      <div class="pcard"><div class="pnum">01</div><h3>Hire for fit</h3><p>Structured screening and candidate matching that finds the right person, not just the available one, and sets the relationship up to last.</p></div>
       <div class="pcard"><div class="pnum">02</div><h3>Onboard &amp; enable</h3><p>Onboarding and internal communication that get people productive fast and keep the team aligned, informed, and conflict‑free.</p></div>
-      <div class="pcard"><div class="pnum">03</div><h3>Engage &amp; retain</h3><p>The systems and signals that show why people stay — and surface the risk of losing good ones before it becomes a resignation.</p></div>
+      <div class="pcard"><div class="pnum">03</div><h3>Engage &amp; retain</h3><p>The systems and signals that show why people stay, and surface the risk of losing good ones before it becomes a resignation.</p></div>
     </div>
   </div>
 </section>
@@ -189,13 +216,13 @@
       <div>
         <div class="ctype">Talent Acquisition · Field Study</div>
         <h3>Inside a high‑performing recruitment engine</h3>
-        <div class="desc">How a specialised executive‑search firm builds retention into hiring — mapped end to end, from role diagnosis to post‑hire follow‑up.</div>
+        <div class="desc">How a specialised executive‑search firm builds retention into hiring, mapped end to end, from role diagnosis to post‑hire follow‑up.</div>
         <span class="readlink">Read the full case <span class="accent">→</span></span>
       </div>
     </a>
 
     <a class="casecard" href="cases/case-02-team-enablement.html">
-      <div class="cc-visual"><div class="cc-num">CASE 02</div><div class="cc-big">From <span class="accent">friction</span> to flow</div><div class="cc-tag">Team Enablement</div></div>
+      <div class="cc-visual" style="background:linear-gradient(160deg,var(--pink),#F1E2DD)"><div class="cc-num">CASE 02</div><div class="cc-big">From <span class="accent">friction</span> to flow</div><div class="cc-tag">Team Enablement</div></div>
       <div>
         <div class="ctype">Internal Communication · Intervention</div>
         <h3>Fixing the gaps behind slow service</h3>
@@ -205,14 +232,42 @@
     </a>
 
     <a class="casecard" href="cases/case-03-engagement.html">
-      <div class="cc-visual"><div class="cc-num">CASE 03</div><div class="cc-big">Why people <span class="accent">stay</span></div><div class="cc-tag">Engagement &amp; Retention</div></div>
+      <div class="cc-visual" style="background:linear-gradient(160deg,#C9A39C,#E9D3CE)"><div class="cc-num">CASE 03</div><div class="cc-big">Why people <span class="accent">stay</span></div><div class="cc-tag">Engagement &amp; Retention</div></div>
       <div>
         <div class="ctype">Employee Engagement · Research</div>
         <h3>What actually keeps people engaged</h3>
-        <div class="desc">A quantitative study linking internal communication to motivation, satisfaction, and retention — the data behind why people stay.</div>
+        <div class="desc">A quantitative study linking internal communication to motivation, satisfaction, and retention, the data behind why people stay.</div>
         <span class="readlink">Read the full case <span class="accent">→</span></span>
       </div>
     </a>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="wrap">
+    <div class="sechead">
+      <div class="kick">Experience</div>
+      <h2>The systems behind it, built in the real world.</h2>
+      <p>Years running people and operations for real teams, not just theory.</p>
+    </div>
+    <div class="exp-grid">
+      <div class="exp-photo"><img src="karina-working.jpg" alt="Karina Souza at work"></div>
+      <div class="exp-cards">
+        <a class="expcard" href="cases/case-experience-pa.html">
+          <div class="ctype">Operations · 8 years</div>
+          <h3>Eight years, <span class="accent">zero failures</span></h3>
+          <div class="desc">Running the operational backbone of an executive office, end to end, with nothing dropped.</div>
+          <span class="readlink">Read the case <span class="accent">&rarr;</span></span>
+        </a>
+        <a class="expcard" href="cases/case-experience-recruitment.html">
+          <div class="ctype">Recruitment · 2025</div>
+          <h3>Recruitment, matched for <span class="accent">fit</span></h3>
+          <div class="desc">Connecting jobseekers with the right employers, in the employment and training sector.</div>
+          <span class="readlink">Read the case <span class="accent">&rarr;</span></span>
+        </a>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -221,7 +276,7 @@
   <div class="wrap">
     <div class="kick">Let's talk</div>
     <h2 style="margin-top:14px">Don't lose the people you worked hard to hire.</h2>
-    <p>If you're growing fast and want a team that performs — and stays — let's start a conversation.</p>
+    <p>If you're growing fast and want a team that performs, and stays, let's start a conversation.</p>
     <a href="mailto:karina.jeronimo@hotmail.com" class="btn btn-primary">Get in touch</a>
     <a href="https://www.linkedin.com/in/karina-souza-7b5667247/" class="btn btn-ghost" style="margin-left:10px">LinkedIn</a>
   </div>
