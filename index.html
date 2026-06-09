@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Karina Souza — People Operations & Talent</title>
+<meta name="description" content="I help growing companies build high-performing teams that keep their best people. Hiring, onboarding, and the systems that make people stay.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<!-- Social / Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Karina Souza — People Operations & Talent">
+<meta property="og:description" content="I help growing companies build high-performing teams that keep their best people.">
+<meta property="og:image" content="https://karinajsou810-star.github.io/rh/og-image.png">
+<meta property="og:url" content="https://karinajsou810-star.github.io/rh/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Karina Souza — People Operations & Talent">
+<meta name="twitter:description" content="I help growing companies build high-performing teams that keep their best people.">
+<meta name="twitter:image" content="https://karinajsou810-star.github.io/rh/og-image.png">
+<style>
+  :root{
+    --bg:#FCFCFA; --ink:#15181E; --body:#33373F; --mut:#6B7280;
+    --line:#E6E8EC; --soft:#F6F6F2; --card:#FFFFFF;
+    --red:#E04A43; --green:#1FA971; --amber:#E0A12B; --maxw:1080px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:"Helvetica Neue",Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
+  .kick{font-size:12.5px;letter-spacing:.26em;text-transform:uppercase;color:var(--mut);font-weight:700}
+  .accent{color:var(--red)}
+
+  nav{position:sticky;top:0;z-index:50;background:rgba(252,252,250,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  nav .wrap{display:flex;justify-content:space-between;align-items:center;height:68px}
+  .logo{font-weight:700;font-size:18px;letter-spacing:-.01em}
+  .logo span{color:var(--mut);font-weight:400}
+  .navlinks{display:flex;gap:30px;font-size:14.5px;color:var(--mut)}
+  .navlinks a:hover{color:var(--ink)}
+  .navcta{border:1px solid var(--red);color:var(--red);padding:9px 18px;border-radius:999px;font-size:14px;font-weight:600}
+  .navcta:hover{background:rgba(224,74,67,.07)}
+  @media(max-width:720px){.navlinks{display:none}}
+
+  .hero{position:relative;padding:96px 0 84px;overflow:hidden;background:linear-gradient(180deg,#fff,var(--bg))}
+  .grid{position:absolute;inset:0;background-image:linear-gradient(rgba(0,0,0,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(0,0,0,.035) 1px,transparent 1px);background-size:62px 62px;mask-image:radial-gradient(760px 480px at 80% 12%,#000 22%,transparent 78%)}
+  .hero .wrap{position:relative;z-index:2}
+  h1{font-size:62px;line-height:1.05;font-weight:700;letter-spacing:-.03em;margin:22px 0 0;max-width:880px;color:var(--ink)}
+  .lede{margin-top:24px;font-size:21px;color:var(--mut);max-width:680px;font-weight:400}
+  .herobtns{margin-top:38px;display:flex;gap:14px;flex-wrap:wrap}
+  .btn{padding:14px 26px;border-radius:999px;font-weight:600;font-size:15.5px;display:inline-block}
+  .btn-primary{background:var(--red);color:#fff}
+  .btn-primary:hover{background:#cf403a}
+  .btn-ghost{border:1px solid #D6D9DE;color:var(--ink)}
+  .btn-ghost:hover{border-color:#B9BDC4}
+  .scale{margin-top:46px;display:flex;gap:12px;flex-wrap:wrap}
+  .pill{display:flex;align-items:center;gap:9px;padding:10px 17px;border:1px solid var(--line);border-radius:999px;font-size:14px;color:var(--body);font-weight:500;background:var(--card)}
+  .dot{width:9px;height:9px;border-radius:50%}
+  @media(max-width:720px){h1{font-size:38px}.lede{font-size:18px}}
+
+  section{padding:84px 0;border-top:1px solid var(--line)}
+  .sechead{max-width:680px;margin-bottom:48px}
+  .sechead h2{font-size:36px;font-weight:700;letter-spacing:-.02em;margin-top:14px;line-height:1.15;color:var(--ink)}
+  .sechead p{margin-top:16px;color:var(--mut);font-size:17px}
+
+  /* ABOUT ME with photo */
+  .about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:50px;align-items:center}
+  .about-photo img{width:100%;border-radius:18px;border:1px solid var(--line);display:block}
+  .about-txt p{color:var(--body);font-size:17px;margin-bottom:16px}
+  .about-txt p b{color:var(--ink);font-weight:700}
+  .facts{margin-top:22px;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .fact{border:1px solid var(--line);border-radius:12px;padding:14px 16px;background:var(--card)}
+  .fact .fn{color:var(--red);font-weight:700;font-size:13px;font-family:"SF Mono",ui-monospace,Menlo,monospace}
+  .fact .ft{font-size:14px;color:var(--body);margin-top:4px}
+  @media(max-width:720px){.about-grid{grid-template-columns:1fr;gap:30px}.facts{grid-template-columns:1fr}}
+
+  .pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .pcard{border:1px solid var(--line);border-radius:18px;padding:32px;background:var(--card);transition:.2s}
+  .pcard:hover{border-color:var(--red);transform:translateY(-3px);box-shadow:0 18px 40px -24px rgba(20,24,30,.18)}
+  .pnum{font-family:"SF Mono",ui-monospace,Menlo,monospace;font-size:13px;color:var(--mut)}
+  .pcard h3{font-size:21px;font-weight:700;margin:14px 0 10px;letter-spacing:-.01em;color:var(--ink)}
+  .pcard p{color:var(--mut);font-size:15px}
+  @media(max-width:720px){.pillars{grid-template-columns:1fr}}
+
+  /* CASE CARDS */
+  .casecard{display:grid;grid-template-columns:1fr 1.5fr;gap:40px;align-items:center;padding:34px;border:1px solid var(--line);border-radius:20px;background:var(--card);margin-bottom:22px;transition:.2s}
+  .casecard:hover{border-color:var(--red);transform:translateY(-3px);box-shadow:0 22px 50px -28px rgba(20,24,30,.2)}
+  .cc-visual{aspect-ratio:4/3;border-radius:14px;border:1px solid var(--line);position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;background:linear-gradient(160deg,#F7F6F2,#fff)}
+  .cc-num{font-family:"SF Mono",ui-monospace,Menlo,monospace;font-size:13px;color:var(--mut);position:absolute;top:16px;left:18px;letter-spacing:.1em}
+  .cc-tag{position:absolute;bottom:16px;left:18px;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--mut);font-weight:700}
+  .cc-big{font-size:38px;font-weight:700;letter-spacing:-.02em;text-align:center;padding:0 20px;color:var(--ink)}
+  .ctype{font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--red);font-weight:700}
+  .casecard h3{font-size:26px;font-weight:700;margin:10px 0 12px;letter-spacing:-.015em;line-height:1.2;color:var(--ink)}
+  .casecard .desc{color:var(--body);font-size:16px}
+  .readlink{display:inline-block;margin-top:18px;font-weight:600;color:var(--ink);font-size:15px}
+  @media(max-width:720px){.casecard{grid-template-columns:1fr;gap:22px}}
+
+  .contact{text-align:center;background:var(--soft)}
+  .contact h2{font-size:42px;font-weight:700;letter-spacing:-.02em;max-width:720px;margin:0 auto 18px;color:var(--ink)}
+  .contact p{color:var(--mut);font-size:18px;max-width:560px;margin:0 auto 34px}
+  footer{border-top:1px solid var(--line);padding:36px 0;color:var(--mut);font-size:14px}
+  footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+  footer a{color:var(--mut)}
+  footer a:hover{color:var(--ink)}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="logo">Karina Souza <span>· People Ops</span></div>
+    <div class="navlinks">
+      <a href="#about">About</a>
+      <a href="#work">What I do</a>
+      <a href="#cases">Case studies</a>
+    </div>
+    <a href="#contact" class="navcta">Let's talk</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="grid"></div>
+  <div class="wrap">
+    <div class="kick">People Operations &amp; Talent</div>
+    <h1>I help growing companies build high‑performing teams that <span class="accent">keep their best people.</span></h1>
+    <p class="lede">Hiring for fit, onboarding that works from day one, and the systems that keep teams aligned — and good people from quietly leaving.</p>
+    <div class="herobtns">
+      <a href="#contact" class="btn btn-primary">Work with me</a>
+      <a href="#cases" class="btn btn-ghost">See case studies</a>
+    </div>
+    <div class="scale">
+      <div class="pill"><span class="dot" style="background:var(--green)"></span>Attract</div>
+      <div class="pill"><span class="dot" style="background:var(--amber)"></span>Engage</div>
+      <div class="pill"><span class="dot" style="background:var(--red)"></span>Retain</div>
+    </div>
+  </div>
+</header>
+
+<!-- ABOUT ME -->
+<section id="about">
+  <div class="wrap">
+    <div class="sechead">
+      <div class="kick">About me</div>
+      <h2>Teams aren't just hired. They're built — and kept.</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-photo"><img src="karina-photo.jpg" alt="Karina Souza — People Operations & Talent"></div>
+      <div class="about-txt">
+        <p>I'm <b>Karina Souza</b>, a People Operations &amp; Talent specialist. Companies rarely lose their best people over pay — they lose them because hiring, onboarding, and everyday team life were never built to keep them.</p>
+        <p><b>I help growing companies fix that.</b> Across recruitment, onboarding, team coordination, and operations, I've learned that high‑performing teams come down to a few things done consistently well — hiring the right people, getting them productive fast, and building the systems that keep a team together.</p>
+        <p>I work with startups, consultancies, agencies, and international teams that can't afford to lose the people they worked hard to hire.</p>
+        <div class="facts">
+          <div class="fact"><div class="fn">01</div><div class="ft">Recruitment &amp; candidate fit</div></div>
+          <div class="fact"><div class="fn">02</div><div class="ft">Onboarding &amp; day‑one readiness</div></div>
+          <div class="fact"><div class="fn">03</div><div class="ft">People ops &amp; team alignment</div></div>
+          <div class="fact"><div class="fn">04</div><div class="ft">Engagement &amp; retention</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT I DO -->
+<section id="work">
+  <div class="wrap">
+    <div class="sechead">
+      <div class="kick">What I do</div>
+      <h2>The full people journey — not one piece of it.</h2>
+      <p>From the first hire to the team that stays, I put the foundations in place.</p>
+    </div>
+    <div class="pillars">
+      <div class="pcard"><div class="pnum">01</div><h3>Hire for fit</h3><p>Structured screening and candidate matching that finds the right person, not just the available one — and sets the relationship up to last.</p></div>
+      <div class="pcard"><div class="pnum">02</div><h3>Onboard &amp; enable</h3><p>Onboarding and internal communication that get people productive fast and keep the team aligned, informed, and conflict‑free.</p></div>
+      <div class="pcard"><div class="pnum">03</div><h3>Engage &amp; retain</h3><p>The systems and signals that show why people stay — and surface the risk of losing good ones before it becomes a resignation.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CASE STUDIES -->
+<section id="cases">
+  <div class="wrap">
+    <div class="sechead">
+      <div class="kick">Case studies</div>
+      <h2>Work that proves the cycle: attract → engage → retain.</h2>
+      <p>Field research and interventions across recruitment, internal communication, and employee engagement.</p>
+    </div>
+
+    <a class="casecard" href="cases/case-01-recruitment.html">
+      <div class="cc-visual"><div class="cc-num">CASE 01</div><div class="cc-big">Hiring that <span class="accent">never ends</span></div><div class="cc-tag">Talent Acquisition</div></div>
+      <div>
+        <div class="ctype">Talent Acquisition · Field Study</div>
+        <h3>Inside a high‑performing recruitment engine</h3>
+        <div class="desc">How a specialised executive‑search firm builds retention into hiring — mapped end to end, from role diagnosis to post‑hire follow‑up.</div>
+        <span class="readlink">Read the full case <span class="accent">→</span></span>
+      </div>
+    </a>
+
+    <a class="casecard" href="cases/case-02-team-enablement.html">
+      <div class="cc-visual"><div class="cc-num">CASE 02</div><div class="cc-big">From <span class="accent">friction</span> to flow</div><div class="cc-tag">Team Enablement</div></div>
+      <div>
+        <div class="ctype">Internal Communication · Intervention</div>
+        <h3>Fixing the gaps behind slow service</h3>
+        <div class="desc">Diagnosed a team's communication breakdown and built a training program to cut wait times and lift the customer and employee experience.</div>
+        <span class="readlink">Read the full case <span class="accent">→</span></span>
+      </div>
+    </a>
+
+    <a class="casecard" href="cases/case-03-engagement.html">
+      <div class="cc-visual"><div class="cc-num">CASE 03</div><div class="cc-big">Why people <span class="accent">stay</span></div><div class="cc-tag">Engagement &amp; Retention</div></div>
+      <div>
+        <div class="ctype">Employee Engagement · Research</div>
+        <h3>What actually keeps people engaged</h3>
+        <div class="desc">A quantitative study linking internal communication to motivation, satisfaction, and retention — the data behind why people stay.</div>
+        <span class="readlink">Read the full case <span class="accent">→</span></span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <div class="wrap">
+    <div class="kick">Let's talk</div>
+    <h2 style="margin-top:14px">Don't lose the people you worked hard to hire.</h2>
+    <p>If you're growing fast and want a team that performs — and stays — let's start a conversation.</p>
+    <a href="mailto:karina.jeronimo@hotmail.com" class="btn btn-primary">Get in touch</a>
+    <a href="https://www.linkedin.com/in/karina-souza-7b5667247/" class="btn btn-ghost" style="margin-left:10px">LinkedIn</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>© Karina Souza · People Operations &amp; Talent</div>
+    <div><a href="https://www.linkedin.com/in/karina-souza-7b5667247/">LinkedIn</a> &nbsp;·&nbsp; <a href="mailto:karina.jeronimo@hotmail.com">Email</a></div>
+  </div>
+</footer>
+
+</body>
+</html>
