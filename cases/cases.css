@@ -78,3 +78,6 @@ footer a:hover{color:var(--ink)}
 
 .c-hero h1 .accent{font-style:italic}
 .c-hero{background:linear-gradient(180deg,#F1E2D2,var(--bg))}
+
+.meta.meta3{grid-template-columns:repeat(3,1fr)}
+@media(max-width:720px){.meta.meta3{grid-template-columns:1fr 1fr}}
