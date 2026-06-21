@@ -90,6 +90,21 @@
   .contact-cta{display:inline-flex;align-items:center;gap:10px;font-size:11px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--silence);background:var(--merlot);text-decoration:none;padding:14px 28px;transition:background .2s;width:fit-content;}
   .contact-cta::after{content:'\2197';font-size:14px;}
   .contact-cta:hover{background:#6B1F24;}
+  .contact-form{display:flex;flex-direction:column;gap:14px;margin-bottom:28px;max-width:440px;}
+  .contact-form input,.contact-form textarea{font-family:'Source Sans Pro',sans-serif;font-size:14px;color:var(--ink);background:transparent;border:none;border-bottom:0.5px solid var(--line);padding:11px 2px;outline:none;transition:border-color .2s;}
+  .contact-form input::placeholder,.contact-form textarea::placeholder{color:var(--gray);}
+  .contact-form input:focus,.contact-form textarea:focus{border-color:var(--merlot);}
+  .contact-form textarea{resize:vertical;min-height:70px;}
+  .contact-form button{margin-top:8px;display:inline-flex;align-items:center;gap:10px;font-family:'Source Sans Pro',sans-serif;font-size:11px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--silence);background:var(--merlot);border:none;padding:14px 28px;cursor:pointer;width:fit-content;transition:background .2s;}
+  .contact-form button::after{content:'\2197';font-size:14px;}
+  .contact-form button:hover{background:#6B1F24;}
+  .contact-social{display:flex;align-items:center;gap:14px;margin-bottom:22px;}
+  .contact-social a{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;border:0.5px solid var(--line);border-radius:50%;color:var(--body);transition:color .2s,border-color .2s,background .2s;}
+  .contact-social a:hover{color:var(--silence);background:var(--merlot);border-color:var(--merlot);}
+  .contact-social svg{width:18px;height:18px;}
+  .contact-note{font-size:13px;font-weight:300;color:var(--gray);line-height:1.6;max-width:440px;}
+  .contact-note a{color:var(--merlot);text-decoration:none;border-bottom:0.5px solid rgba(92,26,30,0.3);padding-bottom:1px;}
+  .contact-note a:hover{border-color:var(--merlot);}
   @media(max-width:800px){.contact-grid{grid-template-columns:1fr;}.contact-photo{height:420px;}.contact-content{padding:48px 28px;}.contact-title{font-size:38px;}.contact-fields{grid-template-columns:1fr;}}
 </style>
 </head>
@@ -215,8 +230,8 @@
           <span class="cs-num cs-num--onIce">03</span>
         </div>
         <div class="cs-body">
-          <span class="cs-tag">Future Solutions · Leiria, Portugal</span>
-          <p class="cs-title">How Future Solutions documented its recruitment process and gained the capacity to grow into <em>new markets without reinventing how it works.</em></p>
+          <span class="cs-tag">Recruitment consultancy · Portugal</span>
+          <p class="cs-title">How a specialist recruitment consultancy documented its recruitment process and gained the capacity to grow into <em>new markets without reinventing how it works.</em></p>
         </div>
       </a>
 
@@ -249,26 +264,25 @@
       <div class="contact-content">
         <p class="contact-eyebrow">Let's talk</p>
         <h2 class="contact-title">Get<br>in <em>touch.</em></h2>
-        <div class="contact-fields">
-          <div>
-            <p class="contact-field-label">Email</p>
-            <p class="contact-field-value"><a href="mailto:karina.jeronimo@hotmail.com">karina.jeronimo@hotmail.com</a></p>
-          </div>
-          <div>
-            <p class="contact-field-label">LinkedIn</p>
-            <p class="contact-field-value"><a href="https://www.linkedin.com/in/karina-souza-7b5667247/" target="_blank" rel="noopener">Karina Souza</a></p>
-          </div>
-          <div>
-            <p class="contact-field-label">Location</p>
-            <p class="contact-field-value">Lisbon, Portugal<br>Available remotely</p>
-          </div>
-          <div>
-            <p class="contact-field-label">Working with</p>
-            <p class="contact-field-value">Startups · Consultancies<br>International teams</p>
-          </div>
+
+        <!-- FORM: replace YOUR_FORM_ID with your Formspree form id to activate delivery -->
+        <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <input type="text" name="name" placeholder="Your name" required>
+          <input type="email" name="email" placeholder="Your email" required>
+          <textarea name="message" placeholder="What would you like help with?" required></textarea>
+          <button type="submit">Send message</button>
+        </form>
+
+        <div class="contact-social">
+          <a href="mailto:karina.jeronimo@hotmail.com" aria-label="Email Karina">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/karina-souza-7b5667247/" target="_blank" rel="noopener" aria-label="Karina on LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V23h-4V8zm7.5 0h3.8v2.05h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V23h-4v-6.6c0-1.57-.03-3.6-2.2-3.6-2.2 0-2.53 1.72-2.53 3.49V23h-4V8z"/></svg>
+          </a>
         </div>
-        <hr class="contact-divider">
-        <a class="contact-cta" href="https://calendly.com/karinajsou810/new-meeting" target="_blank" rel="noopener">Book a free fit call</a>
+
+        <p class="contact-note">Working with startups, small companies, and growing teams. Prefer to talk live? <a href="https://calendly.com/karinajsou810/new-meeting" target="_blank" rel="noopener">Book a free fit call ↗</a></p>
       </div>
     </div>
   </section>
