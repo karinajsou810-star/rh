@@ -8,7 +8,7 @@
 <meta name="keywords" content="employee retention, talent retention, high-performance teams, team culture, reduce employee turnover, people operations, employee engagement, retention strategy, scaling teams">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Questrial&family=Newsreader:ital,opsz,wght@1,6..72,400;1,6..72,500&family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Questrial&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing:border-box; margin:0; padding:0; }
   :root{ --silence:#F0E8DC; --ice:#C8DCE8; --merlot:#5C1A1E; --ink:#1A1A1A; --line:#D8CFC6; --gray:#8A8480; --body:#4A4642; --off:#F7F3EE; }
@@ -120,6 +120,59 @@
   .insights-headline{font-family:'Times New Roman',Times,serif;font-size:21px;font-weight:400;line-height:1.36;color:var(--ink);margin-bottom:20px;}
   .insights-readmore{font-size:11px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--merlot);}
   @media(max-width:800px){.insights-grid{grid-template-columns:1fr;}.insights-photo img{min-height:340px;}.insights-content{padding:48px 28px;}.insights-title{font-size:32px;}}
+  /* ===== HOW WE WORK ===== */
+  #how{background:#F4F0E7;color:#211E1A;font-family:'Bricolage Grotesque',sans-serif;padding:110px 48px 120px;overflow:hidden;border-top:0.5px solid var(--line);}
+  .hw-head{max-width:1180px;margin:0 auto 96px;display:grid;grid-template-columns:1fr auto;gap:44px;align-items:end;}
+  .hw-eyebrow{display:flex;align-items:center;gap:14px;margin-bottom:24px;}
+  .hw-eyebrow .hw-line{width:38px;height:2px;background:#EC5A2A;display:block;}
+  .hw-eyebrow .hw-tag{font-size:13px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:#EC5A2A;}
+  .hw-h2{font-size:56px;line-height:1.02;font-weight:800;letter-spacing:-0.02em;max-width:14ch;}
+  .hw-h2 em{color:#EC5A2A;font-style:italic;font-family:'Newsreader',serif;font-weight:500;}
+  .hw-lede{font-family:'Newsreader',serif;font-size:19px;line-height:1.55;color:#54504A;max-width:34ch;}
+  .hw-wrap{max-width:1120px;margin:0 auto;display:flex;flex-direction:column;}
+  .hw-step{display:grid;grid-template-columns:1.05fr 1fr;gap:70px;align-items:center;}
+  .hw-visual{position:relative;width:100%;max-width:500px;justify-self:start;}
+  .hw-visual--right{justify-self:end;}
+  .hw-visual--circle{max-width:420px;}
+  .hw-shadow{position:absolute;inset:18px -18px -18px 18px;border-radius:22px;}
+  .hw-shadow--r{inset:18px 18px -18px -18px;}
+  .hw-shadow--circle{border-radius:50%;}
+  .hw-img{position:relative;display:block;width:100%;height:400px;object-fit:cover;border-radius:22px;}
+  .hw-img--circle{height:auto;aspect-ratio:1/1;border-radius:50%;}
+  .hw-illo{position:relative;width:100%;height:400px;border-radius:22px;overflow:hidden;}
+  .hw-illo--note{background:#C6D1B9;}
+  .hw-illo--map{background:#D9CBA0;}
+  .hw-illo-card{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:56%;background:#FBF8F1;border-radius:14px;padding:24px;box-shadow:0 16px 32px -20px rgba(33,30,26,0.4);}
+  .hw-bar{height:9px;border-radius:5px;background:#DFD8C8;margin-bottom:10px;}
+  .hw-deco-dot{position:absolute;width:24px;height:24px;border-radius:50%;background:#EC5A2A;}
+  .hw-map-circle{position:absolute;top:-48px;right:-48px;width:240px;height:240px;border-radius:50%;background:#CBBA84;}
+  .hw-check-card{position:absolute;left:12%;bottom:14%;width:44%;background:#FBF8F1;border-radius:14px;padding:20px;box-shadow:0 16px 32px -20px rgba(33,30,26,0.4);}
+  .hw-check-row{display:flex;align-items:center;gap:10px;margin-bottom:10px;}
+  .hw-check-row:last-child{margin-bottom:0;}
+  .hw-check{width:18px;height:18px;border-radius:50%;background:#EC5A2A;flex:none;display:flex;align-items:center;justify-content:center;color:#FBF8F1;font-size:11px;font-weight:800;}
+  .hw-check--dark{background:#211E1A;}
+  .hw-check-row .hw-bar{flex:1;margin-bottom:0;}
+  .hw-copy{position:relative;padding:6px 0;}
+  .hw-num{position:absolute;top:-72px;font-size:150px;font-weight:800;line-height:1;letter-spacing:-0.04em;user-select:none;z-index:0;}
+  .hw-num--r{right:0;}
+  .hw-num--l{left:0;}
+  .hw-kicker{display:inline-block;font-size:12.5px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#EC5A2A;margin-bottom:16px;position:relative;z-index:1;}
+  .hw-h3{font-size:31px;font-weight:700;letter-spacing:-0.02em;margin-bottom:16px;line-height:1.1;position:relative;z-index:1;}
+  .hw-p{font-family:'Newsreader',serif;font-size:18px;line-height:1.62;color:#54504A;max-width:46ch;position:relative;z-index:1;}
+  .hw-cta{display:inline-flex;align-items:center;gap:10px;margin-top:26px;background:#EC5A2A;color:#F4F0E7;font-weight:700;font-size:15px;padding:15px 28px;border-radius:100px;text-decoration:none;position:relative;z-index:1;transition:background .2s;}
+  .hw-cta:hover{background:#D44E22;}
+  .hw-connector{display:flex;justify-content:center;align-items:center;gap:10px;height:36px;margin:26px 0;}
+  .hw-dot{width:7px;height:7px;border-radius:50%;background:#EC5A2A;}
+  .hw-dash{width:2px;height:24px;background:repeating-linear-gradient(#C9C3B5 0 5px,transparent 5px 10px);}
+  @media(max-width:900px){
+    #how{padding:64px 24px 72px;}
+    .hw-head{grid-template-columns:1fr;gap:20px;margin-bottom:60px;}
+    .hw-h2{font-size:38px;}
+    .hw-step{grid-template-columns:1fr;gap:36px;}
+    .hw-visual,.hw-visual--right{justify-self:center;}
+    .hw-num{font-size:92px;top:-42px;}
+    .hw-img,.hw-illo{height:320px;}
+  }
 </style>
 </head>
 <body>
@@ -131,6 +184,7 @@
       <div class="links" style="display:flex; align-items:center; gap:28px; font-family:'Questrial',sans-serif; font-size:12.5px; letter-spacing:1.8px; text-transform:uppercase;">
         <a class="navlink" href="#about" style="color:#ede4d3; text-decoration:none;">About</a>
         <a class="navlink" href="#cases" style="color:#ede4d3; text-decoration:none;">Case studies</a>
+        <a class="navlink" href="#how" style="color:#ede4d3; text-decoration:none;">How I work</a>
         <a class="navlink" href="#insights" style="color:#ede4d3; text-decoration:none;">Writing</a>
         <a class="navlink" href="#contact" style="color:#ede4d3; text-decoration:none;">Contact</a>
         <a class="navlink" href="https://calendly.com/karinajsou810/new-meeting" target="_blank" rel="noopener" style="color:#ede4d3; text-decoration:none;">Book a call</a>
@@ -254,6 +308,105 @@
     <div class="cs-bottom">
       <span class="cs-bottom-note">3 cases · 3 organisations</span>
       <a class="cs-bottom-cta" href="https://calendly.com/karinajsou810/new-meeting" target="_blank" rel="noopener">Work with me ↗</a>
+    </div>
+  </section>
+
+  <!-- ===== HOW WE WORK ===== -->
+  <section id="how">
+    <div class="hw-head">
+      <div>
+        <div class="hw-eyebrow"><span class="hw-line"></span><span class="hw-tag">The Journey</span></div>
+        <h2 class="hw-h2">How we'll work <em>together</em></h2>
+      </div>
+      <p class="hw-lede">Keeping your best people starts with truly understanding them. Here's how we get there — four steps, one honest partnership.</p>
+    </div>
+
+    <div class="hw-wrap">
+
+      <!-- STEP 01 -->
+      <div class="hw-step">
+        <div class="hw-visual">
+          <div class="hw-shadow" style="background:#A9B79A;"></div>
+          <div class="hw-illo hw-illo--note">
+            <span class="hw-deco-dot" style="top:14%;left:12%;"></span>
+            <div class="hw-illo-card">
+              <div class="hw-bar" style="width:85%;"></div>
+              <div class="hw-bar" style="width:100%;"></div>
+              <div class="hw-bar" style="width:62%;margin-bottom:0;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="hw-copy">
+          <span class="hw-num hw-num--r" style="color:#E6E0D2;">01</span>
+          <span class="hw-kicker">Step 01 — Reach out</span>
+          <h3 class="hw-h3">Tell me where it hurts</h3>
+          <p class="hw-p">Send a note about what's happening with your people. Quiet turnover, a culture that's drifting, a team that's lost its spark — whatever it is, start there. No polished brief required.</p>
+        </div>
+      </div>
+
+      <div class="hw-connector"><span class="hw-dot"></span><span class="hw-dash"></span></div>
+
+      <!-- STEP 02 -->
+      <div class="hw-step">
+        <div class="hw-copy">
+          <span class="hw-num hw-num--l" style="color:#EFE2DA;">02</span>
+          <span class="hw-kicker">Step 02 — Discovery call</span>
+          <h3 class="hw-h3">A free, honest conversation</h3>
+          <p class="hw-p">We talk — about your goals, your people, and the culture you actually want to build. No scripts, no sales deck. Just me listening closely enough to see what others have missed.</p>
+        </div>
+        <div class="hw-visual hw-visual--right hw-visual--circle">
+          <div class="hw-shadow hw-shadow--r hw-shadow--circle" style="background:#EAD7CE;"></div>
+          <img class="hw-img hw-img--circle" src="assets/karina-insight.jpg" alt="Karina Souza on a discovery call">
+        </div>
+      </div>
+
+      <div class="hw-connector"><span class="hw-dot"></span><span class="hw-dash"></span></div>
+
+      <!-- STEP 03 -->
+      <div class="hw-step">
+        <div class="hw-visual">
+          <div class="hw-shadow" style="background:#B2C1CB;"></div>
+          <img class="hw-img" src="assets/karina-call.jpg" alt="Listening session over a video call">
+        </div>
+        <div class="hw-copy">
+          <span class="hw-num hw-num--r" style="color:#DDE5E9;">03</span>
+          <span class="hw-kicker">Step 03 — Culture audit</span>
+          <h3 class="hw-h3">We name what's really going on</h3>
+          <p class="hw-p">Listening sessions, engagement signals, the unspoken stuff between the lines. Together we surface what's genuinely driving people to stay — and what's quietly pushing them out the door.</p>
+        </div>
+      </div>
+
+      <div class="hw-connector"><span class="hw-dot"></span><span class="hw-dash"></span></div>
+
+      <!-- STEP 04 -->
+      <div class="hw-step">
+        <div class="hw-copy">
+          <span class="hw-num hw-num--l" style="color:#EBE3CD;">04</span>
+          <span class="hw-kicker">Step 04 — Tailored plan</span>
+          <h3 class="hw-h3">A roadmap people can feel</h3>
+          <p class="hw-p">You get a clear, practical plan to keep your best people and strengthen the culture around them — built for your reality, not a template. Then we put it to work, side by side.</p>
+          <a class="hw-cta" href="https://calendly.com/karinajsou810/new-meeting" target="_blank" rel="noopener">Start the conversation <span style="font-size:17px;">→</span></a>
+        </div>
+        <div class="hw-visual hw-visual--right">
+          <div class="hw-shadow hw-shadow--r" style="background:#C4B27F;"></div>
+          <div class="hw-illo hw-illo--map">
+            <span class="hw-map-circle"></span>
+            <span class="hw-deco-dot" style="top:12%;left:10%;"></span>
+            <svg viewBox="0 0 500 400" style="position:absolute;inset:0;width:100%;height:100%;" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M 250 250 C 310 220 350 160 400 100" stroke="#211E1A" stroke-width="3" stroke-dasharray="1 12" stroke-linecap="round"/>
+              <circle cx="250" cy="250" r="10" stroke="#EC5A2A" stroke-width="5" fill="#FBF8F1"/>
+              <path d="M400 60 c-16 0 -28 12 -28 28 c0 20 28 46 28 46 s28 -26 28 -46 c0 -16 -12 -28 -28 -28 z" fill="#EC5A2A"/>
+              <circle cx="400" cy="88" r="9" fill="#FBF8F1"/>
+            </svg>
+            <div class="hw-check-card">
+              <div class="hw-check-row"><span class="hw-check">✓</span><div class="hw-bar" style="width:100%;"></div></div>
+              <div class="hw-check-row"><span class="hw-check">✓</span><div class="hw-bar" style="width:100%;"></div></div>
+              <div class="hw-check-row"><span class="hw-check hw-check--dark"></span><div class="hw-bar" style="width:70%;"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
