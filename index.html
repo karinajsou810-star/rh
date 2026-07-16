@@ -120,6 +120,11 @@
   .insights-headline{font-family:'Times New Roman',Times,serif;font-size:21px;font-weight:400;line-height:1.36;color:var(--ink);margin-bottom:20px;}
   .insights-readmore{font-size:11px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--merlot);}
   @media(max-width:800px){.insights-grid{grid-template-columns:1fr;}.insights-photo img{min-height:340px;}.insights-content{padding:48px 28px;}.insights-title{font-size:32px;}}
+  .cases2{padding:72px 60px 56px;background:var(--silence);}
+  .case-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+  .case-card{display:flex;flex-direction:column;gap:0;}
+  .case-card .insights-headline{font-size:18.5px;flex:1;}
+  @media(max-width:900px){.cases2{padding:48px 28px 36px;}.case-cards{grid-template-columns:1fr;}}
 </style>
 </head>
 <body>
@@ -161,53 +166,30 @@
 
   <!-- ===== CASE STUDIES ===== -->
   <section id="cases" style="font-family:'Source Sans 3',sans-serif;background:var(--silence);color:var(--ink);">
-    <div class="cs-top">
-      <div class="cs-headline">
-        <div class="cs-pill"><span class="cs-pill-text">case</span></div>
-        <span class="cs-word">studies</span>
+    <div class="cases2">
+      <p class="insights-eyebrow">Case studies</p>
+      <h2 class="insights-title">Work on <em>people &amp; retention.</em></h2>
+      <div class="case-cards">
+
+        <a class="insights-card case-card" href="cases/case-01.html">
+          <span class="insights-meta">Recruitment intelligence · Public employment institute · Portugal</span>
+          <p class="insights-headline">How a public employment institute turned every interview into a structured record, and cut <em style="font-style:italic;color:var(--merlot);">decision time per candidate by 60%.</em></p>
+          <span class="insights-readmore">Read case ↗</span>
+        </a>
+
+        <a class="insights-card case-card" href="cases/case-02.html">
+          <span class="insights-meta">People operations · Recruitment firm · Portugal</span>
+          <p class="insights-headline">How a recruitment firm turned weekly hours of <em style="font-style:italic;color:var(--merlot);">internal admin work</em> into recruiting time for their clients.</p>
+          <span class="insights-readmore">Read case ↗</span>
+        </a>
+
+        <a class="insights-card case-card" href="cases/case-03.html">
+          <span class="insights-meta">AI automation · Public employment institute · Portugal</span>
+          <p class="insights-headline">How a public employment institute stopped losing its best candidates to waiting, and started <em style="font-style:italic;color:var(--merlot);">filling every vacancy on time.</em></p>
+          <span class="insights-readmore">Read case ↗</span>
+        </a>
+
       </div>
-      <p class="cs-subtitle">Cultures that retain top talent. Teams that perform. See the people operations work behind both.</p>
-    </div>
-
-    <div class="cs-grid">
-      <a class="cs-col" href="cases/case-01.html">
-        <div class="cs-visual cs-visual--merlot">
-          <span class="cs-arrow cs-arrow--onDark">↗</span>
-          <span class="cs-phase cs-phase--onDark">Recruitment intelligence</span>
-          <span class="cs-state cs-state--onDark">Every interview turned into a structured record.</span>
-          <span class="cs-num cs-num--onDark">01</span>
-        </div>
-        <div class="cs-body">
-          <span class="cs-tag">Public employment institute · Portugal</span>
-          <p class="cs-title">How a public employment institute turned every interview into a structured record, and cut <em>decision time per candidate by 60%.</em></p>
-        </div>
-      </a>
-
-      <a class="cs-col" href="cases/case-02.html">
-        <div class="cs-visual cs-visual--ink">
-          <span class="cs-arrow cs-arrow--onDark">↗</span>
-          <span class="cs-phase cs-phase--onDark">People operations</span>
-          <span class="cs-state cs-state--onDark">Hours of internal admin redirected to client work.</span>
-          <span class="cs-num cs-num--onDark">02</span>
-        </div>
-        <div class="cs-body">
-          <span class="cs-tag">Recruitment firm · Portugal</span>
-          <p class="cs-title">How a recruitment firm turned weekly hours of <em>internal admin work</em> into recruiting time for their clients.</p>
-        </div>
-      </a>
-
-      <a class="cs-col" href="cases/case-03.html">
-        <div class="cs-visual cs-visual--silence">
-          <span class="cs-arrow cs-arrow--onSilence">↗</span>
-          <span class="cs-phase cs-phase--onSilence">AI automation</span>
-          <span class="cs-state cs-state--onSilence">Candidates lost to waiting, now every vacancy filled on time.</span>
-          <span class="cs-num cs-num--onSilence">03</span>
-        </div>
-        <div class="cs-body">
-          <span class="cs-tag">Public employment institute · Portugal</span>
-          <p class="cs-title">How a public employment institute stopped losing its best candidates to waiting, and started <em>filling every vacancy on time.</em></p>
-        </div>
-      </a>
     </div>
 
     <div class="cs-bottom">
