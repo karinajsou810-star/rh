@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About Karina Souza · People &amp; Culture specialist</title>
-<meta name="description" content="Meet Karina Souza, a People &amp; Culture specialist helping companies keep the people they can't afford to lose. Vision, skills, experience, and how we'll work together.">
+<title>Contact · Karina Souza</title>
+<meta name="description" content="How we'll work together, step by step — and how to get in touch with Karina Souza.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400&family=Times+New+Roman&display=swap" rel="stylesheet">
 <style>
   *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
@@ -162,6 +162,40 @@
     .final{padding:70px 24px 60px}
     .final-h2{font-size:36px}
   }
+  #contact{background:var(--silence);border-top:0.5px solid var(--line);}
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;min-height:560px;}
+  .contact-photo{overflow:hidden;position:relative;}
+  .contact-photo img{width:100%;height:100%;object-fit:cover;object-position:center 15%;display:block;}
+  .contact-content{padding:72px 64px;display:flex;flex-direction:column;justify-content:center;background:var(--silence);}
+  .contact-eyebrow{font-size:10px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--gray);margin-bottom:20px;padding-bottom:16px;border-bottom:0.5px solid var(--line);}
+  .contact-title{font-family:'Times New Roman',Times,serif;font-size:56px;font-weight:400;line-height:0.95;color:var(--ink);text-transform:uppercase;margin-bottom:40px;letter-spacing:-0.01em;}
+  .contact-title em{font-style:italic;color:var(--merlot);}
+  .contact-fields{display:grid;grid-template-columns:1fr 1fr;gap:28px 40px;margin-bottom:40px;}
+  .contact-field-label{font-size:9px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:var(--gray);margin-bottom:6px;}
+  .contact-field-value{font-size:14px;font-weight:300;color:var(--body);line-height:1.55;}
+  .contact-field-value a{color:var(--body);text-decoration:none;border-bottom:0.5px solid var(--line);padding-bottom:1px;transition:color .2s,border-color .2s;}
+  .contact-field-value a:hover{color:var(--merlot);border-color:var(--merlot);}
+  hr.contact-divider{border:none;border-top:0.5px solid var(--line);margin-bottom:32px;}
+  .contact-cta{display:inline-flex;align-items:center;gap:10px;font-size:11px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--silence);background:var(--merlot);text-decoration:none;padding:14px 28px;transition:background .2s;width:fit-content;}
+  .contact-cta::after{content:'\2197';font-size:14px;}
+  .contact-cta:hover{background:#D44E22;}
+  .contact-form{display:flex;flex-direction:column;gap:14px;margin-bottom:28px;max-width:440px;}
+  .contact-form input,.contact-form textarea{font-family:'Source Sans Pro',sans-serif;font-size:14px;color:var(--ink);background:transparent;border:none;border-bottom:0.5px solid var(--line);padding:11px 2px;outline:none;transition:border-color .2s;}
+  .contact-form input::placeholder,.contact-form textarea::placeholder{color:var(--gray);}
+  .contact-form input:focus,.contact-form textarea:focus{border-color:var(--merlot);}
+  .contact-form textarea{resize:vertical;min-height:70px;}
+  .contact-form button{margin-top:8px;display:inline-flex;align-items:center;gap:10px;font-family:'Source Sans Pro',sans-serif;font-size:11px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--silence);background:var(--merlot);border:none;padding:14px 28px;cursor:pointer;width:fit-content;transition:background .2s;}
+  .contact-form button::after{content:'\2197';font-size:14px;}
+  .contact-form button:hover{background:#D44E22;}
+  .contact-social{display:flex;align-items:center;gap:14px;margin-bottom:22px;}
+  .contact-social a{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;border:0.5px solid var(--line);border-radius:50%;color:var(--body);transition:color .2s,border-color .2s,background .2s;}
+  .contact-social a:hover{color:var(--silence);background:var(--merlot);border-color:var(--merlot);}
+  .contact-social svg{width:18px;height:18px;}
+  .contact-note{font-size:13px;font-weight:300;color:var(--gray);line-height:1.6;max-width:440px;}
+  .contact-note a{color:var(--merlot);text-decoration:none;border-bottom:0.5px solid rgba(92,26,30,0.3);padding-bottom:1px;}
+  .contact-note a:hover{border-color:var(--merlot);}
+  @media(max-width:800px){.contact-grid{grid-template-columns:1fr;}.contact-photo{height:420px;}.contact-content{padding:48px 28px;}.contact-title{font-size:38px;}.contact-fields{grid-template-columns:1fr;}}
+  :root{--silence:#F4F0E7;--ice:#C7D4DC;--merlot:#EC5A2A;--ink:#211E1A;--line:#E2DAC9;--gray:#8A8478;--body:#54504A;--off:#FBF8F1;}
 </style>
 </head>
 <body>
@@ -179,52 +213,116 @@
   </div>
 </nav>
 
-<!-- ============ INTRO ============ -->
-<section class="intro">
-  <div class="intro-grid">
-    <div class="intro-photo">
-      <div class="intro-blob"></div>
-      <svg width="230" height="300" viewBox="0 0 230 300" fill="none" style="position:absolute;right:-26px;top:60px;z-index:0">
-        <g stroke="#9FB4C0" stroke-width="2" fill="none" opacity="0.65">
-          <circle cx="150" cy="150" r="24"></circle><circle cx="150" cy="150" r="46"></circle><circle cx="150" cy="150" r="68"></circle><circle cx="150" cy="150" r="90"></circle><circle cx="150" cy="150" r="112"></circle><circle cx="150" cy="150" r="134"></circle>
-        </g>
-      </svg>
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="#EC5A2A" style="position:absolute;top:24px;left:24px;z-index:2"><path d="M12 2 L14 10 L22 12 L14 14 L12 22 L10 14 L2 12 L10 10 Z"></path></svg>
-      <div class="intro-arch"><img src="assets/karina-street.jpg" alt="Karina Souza"></div>
-    </div>
+<!-- ============ THE JOURNEY ============ -->
+<section class="journey" id="journey">
+  <div class="jr-head">
     <div>
-      <div class="eyebrow"><span class="ln"></span><span class="tx">A little about me</span></div>
-      <h2 class="h2" style="margin-bottom:26px">Nice to <em>meet you</em></h2>
-      <p class="intro-lede">I help companies <em>keep</em> the people they can't afford to lose — and build cultures those people are proud to belong to.</p>
-      <p class="serif">I'm <strong>Karina Souza</strong>, a <strong>People &amp; Culture specialist</strong> working at the intersection of <strong>organizational communication</strong>, employee engagement, and talent retention.</p>
-      <p class="serif">I've learned that culture isn't a perk or a poster on the wall — it's the <strong>everyday experience of feeling valued</strong>. My approach is <strong>human first, data-informed always</strong>: I listen for what teams aren't saying, find what's quietly driving people away, and turn it into a clear plan leaders can act on.</p>
-      <p class="serif" style="margin-bottom:34px">When companies invest in their people, everything else follows — <strong>performance, loyalty, and growth</strong>.</p>
-      <a class="btn" href="portfolio.html">See my portfolio <span style="font-size:18px">→</span></a>
+      <div class="eyebrow"><span class="ln"></span><span class="tx">The Journey</span></div>
+      <h2 class="h2" style="max-width:14ch">How we'll work <em>together</em></h2>
     </div>
+    <p class="jr-lede">Keeping your best people starts with truly understanding them. Here's how we get there — four steps, one honest partnership.</p>
+  </div>
+
+  <div class="jr-wrap">
+
+    <!-- STEP 01 -->
+    <div class="jr-step">
+      <div class="jr-visual">
+        <div class="jr-shadow" style="background:#A9B79A;"></div>
+        <img class="jr-img" src="assets/journey-01.jpg" alt="Writing a first note">
+      </div>
+      <div class="jr-copy">
+        <span class="jr-num jr-num--r" style="color:#E6E0D2;">01</span>
+        <span class="jr-kicker">Step 01 — Reach out</span>
+        <h3 class="jr-h3">Tell me where it hurts</h3>
+        <p class="jr-p">Send a note about what's happening with your people. Quiet turnover, a culture that's drifting, a team that's lost its spark — whatever it is, start there. No polished brief required.</p>
+      </div>
+    </div>
+
+    <div class="jr-connector"><span class="jr-dot"></span><span class="jr-dash"></span></div>
+
+    <!-- STEP 02 -->
+    <div class="jr-step">
+      <div class="jr-copy">
+        <span class="jr-num jr-num--l" style="color:#EFE2DA;">02</span>
+        <span class="jr-kicker">Step 02 — Discovery call</span>
+        <h3 class="jr-h3">A free, honest conversation</h3>
+        <p class="jr-p">We talk — about your goals, your people, and the culture you actually want to build. No scripts, no sales deck. Just me listening closely enough to see what others have missed.</p>
+      </div>
+      <div class="jr-visual jr-visual--right">
+        <div class="jr-shadow jr-shadow--r" style="background:#EAD7CE;"></div>
+        <img class="jr-img" src="assets/journey-02.jpg" alt="Karina Souza on a discovery call" style="object-position:50% 22%;">
+      </div>
+    </div>
+
+    <div class="jr-connector"><span class="jr-dot"></span><span class="jr-dash"></span></div>
+
+    <!-- STEP 03 -->
+    <div class="jr-step">
+      <div class="jr-visual">
+        <div class="jr-shadow" style="background:#B2C1CB;"></div>
+        <img class="jr-img" src="assets/journey-03.jpg" alt="Culture audit sessions">
+      </div>
+      <div class="jr-copy">
+        <span class="jr-num jr-num--r" style="color:#DDE5E9;">03</span>
+        <span class="jr-kicker">Step 03 — Culture audit</span>
+        <h3 class="jr-h3">We name what's really going on</h3>
+        <p class="jr-p">Listening sessions, engagement signals, the unspoken stuff between the lines. Together we surface what's genuinely driving people to stay — and what's quietly pushing them out the door.</p>
+      </div>
+    </div>
+
+    <div class="jr-connector"><span class="jr-dot"></span><span class="jr-dash"></span></div>
+
+    <!-- STEP 04 -->
+    <div class="jr-step">
+      <div class="jr-copy">
+        <span class="jr-num jr-num--l" style="color:#EBE3CD;">04</span>
+        <span class="jr-kicker">Step 04 — Proposal &amp; plan</span>
+        <h3 class="jr-h3">A roadmap people can feel</h3>
+        <p class="jr-p">You get a clear, practical plan to keep your best people and strengthen the culture around them — built for your reality, not a template. Then we put it to work, side by side.</p>
+        <div class="jr-cta"><a class="btn" href="https://calendly.com/karinajsou810/new-meeting" target="_blank" rel="noopener">Start the conversation <span style="font-size:18px">→</span></a></div>
+      </div>
+      <div class="jr-visual jr-visual--right">
+        <div class="jr-shadow jr-shadow--r" style="background:#C4B27F;"></div>
+        <img class="jr-img" src="assets/journey-04.jpg" alt="A tailored plan taking shape" style="object-position:50% 45%;">
+      </div>
+    </div>
+
   </div>
 </section>
 
-<!-- ============ FINAL CTA ============ -->
-<section class="final">
-  <div class="final-circle" style="top:-120px;right:-100px;width:360px;height:360px;"></div>
-  <div class="final-circle" style="bottom:-140px;left:-90px;width:300px;height:300px;"></div>
-  <div class="final-in">
-    <div class="eyebrow"><span class="ln"></span><span class="tx">Let's work together</span><span class="ln"></span></div>
-    <h2 class="final-h2">Ready to build a culture<br>people <em>stay</em> for?</h2>
-    <p>Every team I work with takes a step toward keeping their best people — and growing a culture worth belonging to.</p>
-    <p>If you're ready to stop losing great people, let's talk.</p>
-    <a class="btn" href="https://calendly.com/karinajsou810/new-meeting" target="_blank" rel="noopener">Start the conversation <span style="font-size:19px">→</span></a>
-    <div class="social">
-      <a href="https://www.linkedin.com/in/karina-souza-7b5667247/" target="_blank" rel="noopener" aria-label="LinkedIn">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="#F4F0E7"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 9h4v12H3zM10 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05C21.4 8.65 22 11 22 14.1V21h-4v-6.1c0-1.45-.03-3.3-2-3.3-2 0-2.3 1.57-2.3 3.2V21h-4z"></path></svg>
-      </a>
-      <a href="mailto:karina.jeronimo@hotmail.com" aria-label="Email">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F4F0E7" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3 7l9 6 9-6"></path></svg>
-      </a>
+
+<!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <div class="contact-grid">
+      <div class="contact-photo">
+        <img src="assets/karina-contact-v2.jpg" alt="Karina Souza">
+      </div>
+      <div class="contact-content">
+        <p class="contact-eyebrow">Let's talk</p>
+        <h2 class="contact-title">Get<br>in <em>touch.</em></h2>
+
+        <!-- FORM: replace YOUR_FORM_ID with your Formspree form id to activate delivery -->
+        <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <input type="text" name="name" placeholder="Your name" required>
+          <input type="email" name="email" placeholder="Your email" required>
+          <textarea name="message" placeholder="What would you like help with?" required></textarea>
+          <button type="submit">Send message</button>
+        </form>
+
+        <div class="contact-social">
+          <a href="mailto:karina.jeronimo@hotmail.com" aria-label="Email Karina">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/karina-souza-7b5667247/" target="_blank" rel="noopener" aria-label="Karina on LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V23h-4V8zm7.5 0h3.8v2.05h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V23h-4v-6.6c0-1.57-.03-3.6-2.2-3.6-2.2 0-2.53 1.72-2.53 3.49V23h-4V8z"/></svg>
+          </a>
+        </div>
+
+        <p class="contact-note">Working with startups, small companies, and growing teams. Prefer to talk live? <a href="https://calendly.com/karinajsou810/new-meeting" target="_blank" rel="noopener">Book a free fit call ↗</a></p>
+      </div>
     </div>
-    <p class="final-note">© 2026 Karina Souza — All rights reserved.</p>
-  </div>
-</section>
+  </section>
 
 </body>
 </html>
