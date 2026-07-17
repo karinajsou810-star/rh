@@ -101,6 +101,15 @@
   .btn:hover{background:#D44E22;}
   @media(max-width:900px){.intro{padding:56px 24px;}.intro-grid{grid-template-columns:1fr;gap:48px;}.intro-photo{min-height:0;}.intro-blob{width:320px;height:400px;}.intro-arch{width:290px;height:390px;}.h2{font-size:38px;}}
 
+  /* ── TESTIMONIALS ── */
+  #testimonials{background:var(--silence);border-top:0.5px solid var(--line);padding:72px 60px 84px;}
+  .tst-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+  .tst-card{display:flex;flex-direction:column;border:0.5px solid var(--line);background:var(--off);padding:30px 32px;}
+  .tst-quote{font-family:'Times New Roman',Times,serif;font-style:italic;font-size:17.5px;line-height:1.62;color:var(--ink);flex:1;margin-bottom:22px;}
+  .tst-quote::before{content:'\201C';display:block;font-size:44px;line-height:0.6;color:var(--merlot);margin-bottom:14px;font-style:normal;}
+  .tst-who{font-size:10px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:var(--gray);border-top:0.5px solid var(--line);padding-top:14px;}
+  @media(max-width:900px){#testimonials{padding:48px 28px 56px;}.tst-cards{grid-template-columns:1fr;}}
+
   /* ── CONTACT SECTION ── */
   #contact{background:var(--silence);border-top:0.5px solid var(--line);}
   .contact-grid{display:grid;grid-template-columns:1fr 1fr;min-height:560px;}
@@ -318,6 +327,30 @@
   </section>
 
   
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section id="testimonials">
+    <p class="insights-eyebrow">What they say</p>
+    <h2 class="insights-title">Words from <em>the people I've worked with.</em></h2>
+    <div class="tst-cards">
+
+      <div class="tst-card">
+        <p class="tst-quote">From the moment the system went live, the team started arriving at each decision with structured information instead of impressions. And candidates started receiving an immediate response, not when someone remembered.</p>
+        <p class="tst-who">Ana Barreiro · HR, Public Employment and Training Institute</p>
+      </div>
+
+      <div class="tst-card">
+        <p class="tst-quote">We stopped talking about holidays in team meetings. The system handles that. And the management team went back to focusing on what clients hire us for: finding the right people.</p>
+        <p class="tst-who">Benedita Souza · Operational team, recruitment firm</p>
+      </div>
+
+      <div class="tst-card">
+        <p class="tst-quote">The HR team doesn't do less work. They do different work. Candidates advance through the process without depending on someone pushing them manually.</p>
+        <p class="tst-who">Ana Barreiro · HR, Public Employment and Training Institute</p>
+      </div>
+
+    </div>
+  </section>
 
   <!-- ===== CONTACT ===== -->
   <section id="contact">
