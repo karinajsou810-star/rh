@@ -12,6 +12,7 @@
 <style>
   *, *::before, *::after { box-sizing:border-box; margin:0; padding:0; }
   :root{ --silence:#F4F0E7; --ice:#C7D4DC; --merlot:#EC5A2A; --ink:#211E1A; --line:#E2DAC9; --gray:#8A8478; --body:#54504A; --off:#FBF8F1; }
+  html,body{ overflow-x:hidden; }
   body{ margin:0; -webkit-font-smoothing:antialiased; }
   .navlink:hover{opacity:.6;}
   .herobtn:hover{background:#D44E22 !important; transform:translateY(-2px);}
@@ -63,6 +64,11 @@
     .topnav .links{display:none !important;}
     .hero-h1{font-size:36px !important;}
     .about-grid{grid-template-columns:1fr !important;}
+    #about{padding:56px 22px !important;}
+    #about div[style*="font-size:92px"]{font-size:54px !important; letter-spacing:0 !important;}
+    #about div[style*="font-size:38px"]{font-size:28px !important;}
+    #about p{max-width:100% !important;}
+    #about img{min-height:0 !important; height:auto !important; aspect-ratio:3/4;}
     .cs-top{padding:44px 28px 36px;}
     .cs-pill-text{font-size:34px;}
     .cs-word{font-size:38px;}
