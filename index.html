@@ -8,7 +8,7 @@
 <meta name="keywords" content="employee retention, talent retention, high-performance teams, team culture, reduce employee turnover, people operations, employee engagement, retention strategy, scaling teams">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Questrial&family=Newsreader:ital,opsz,wght@1,6..72,400;1,6..72,500&family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Questrial&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing:border-box; margin:0; padding:0; }
   :root{ --silence:#F4F0E7; --ice:#C7D4DC; --merlot:#EC5A2A; --ink:#211E1A; --line:#E2DAC9; --gray:#8A8478; --body:#54504A; --off:#FBF8F1; }
@@ -71,6 +71,29 @@
     .cs-col:nth-child(odd){border-right:0.5px solid var(--line);}
     .cs-bottom{padding:24px 28px;flex-direction:column;align-items:flex-start;gap:16px;}
   }
+
+
+  /* ── NICE TO MEET YOU ── */
+  #meet{background:#F4F0E7;font-family:'Bricolage Grotesque',sans-serif;color:#211E1A;}
+  .intro{max-width:1180px;margin:0 auto;padding:90px 48px 90px;}
+  .intro-grid{display:grid;grid-template-columns:0.92fr 1.08fr;gap:88px;align-items:center;}
+  .intro-photo{position:relative;display:flex;justify-content:center;min-height:540px;align-items:center;}
+  .intro-blob{position:absolute;top:-6px;left:50%;transform:translateX(-56%);width:440px;height:520px;background:#EAD7CE;border-radius:54% 46% 52% 48% / 48% 52% 48% 52%;}
+  .intro-arch{position:relative;z-index:1;width:380px;height:500px;border-radius:190px 190px 24px 24px;overflow:hidden;box-shadow:0 24px 50px -24px rgba(33,30,26,0.45);}
+  .intro-arch img{width:100%;height:100%;object-fit:cover;object-position:50% 28%;display:block;}
+  .intro-lede{font-family:'Newsreader',serif;font-size:24px;line-height:1.42;color:#211E1A;margin-bottom:28px;max-width:40ch;}
+  .intro-lede em{color:#EC5A2A;font-style:italic;}
+  .intro p.serif{font-size:18px;margin-bottom:18px;max-width:52ch;}
+  .eyebrow{display:flex;align-items:center;gap:14px;margin-bottom:24px;}
+  .eyebrow .ln{width:38px;height:2px;background:#EC5A2A;display:block;}
+  .eyebrow .tx{font-size:13px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:#EC5A2A;}
+  .h2{font-size:56px;line-height:1.0;font-weight:800;letter-spacing:-0.025em;}
+  .h2 em{color:#EC5A2A;font-style:italic;font-family:'Newsreader',serif;font-weight:500;}
+  .serif{font-family:'Newsreader',serif;color:#54504A;line-height:1.62;}
+  .serif strong{font-family:'Bricolage Grotesque',sans-serif;font-weight:700;color:#211E1A;}
+  .btn{display:inline-flex;align-items:center;gap:10px;background:#EC5A2A;color:#F4F0E7;font-weight:700;font-size:16px;padding:16px 30px;border-radius:100px;text-decoration:none;transition:background .2s;font-family:'Bricolage Grotesque',sans-serif;}
+  .btn:hover{background:#D44E22;}
+  @media(max-width:900px){.intro{padding:56px 24px;}.intro-grid{grid-template-columns:1fr;gap:48px;}.intro-photo{min-height:0;}.intro-blob{width:320px;height:400px;}.intro-arch{width:290px;height:390px;}.h2{font-size:38px;}}
 
   /* ── CONTACT SECTION ── */
   #contact{background:var(--silence);border-top:0.5px solid var(--line);}
@@ -196,8 +219,8 @@
           </div>
         </div>
         <div style="margin-top:40px; display:flex; gap:16px; flex-wrap:wrap; align-items:center;">
-          <a class="aboutbtn" href="about.html" style="background:#EC5A2A; color:#F4F0E7; text-decoration:none; font-family:'Source Sans Pro',sans-serif; font-weight:600; font-size:13px; letter-spacing:1px; text-transform:uppercase; padding:14px 28px; border-radius:100px;">Learn more about me &rarr;</a>
-          <a href="https://calendly.com/karinajsou810/new-meeting" target="_blank" rel="noopener" style="color:#EC5A2A; text-decoration:none; font-family:'Source Sans Pro',sans-serif; font-weight:600; font-size:13px; letter-spacing:1px; text-transform:uppercase; border-bottom:1.5px solid #EC5A2A; padding-bottom:2px;">Book a free fit call &rarr;</a>
+          <a class="aboutbtn" href="https://calendly.com/karinajsou810/new-meeting" target="_blank" rel="noopener" style="background:#EC5A2A; color:#F4F0E7; text-decoration:none; font-family:'Source Sans Pro',sans-serif; font-weight:600; font-size:13px; letter-spacing:1px; text-transform:uppercase; padding:14px 28px; border-radius:100px;">Book a free fit call &rarr;</a>
+          <a href="#cases" style="color:#EC5A2A; text-decoration:none; font-family:'Source Sans Pro',sans-serif; font-weight:600; font-size:13px; letter-spacing:1px; text-transform:uppercase; border-bottom:1.5px solid #EC5A2A; padding-bottom:2px;">See case studies &rarr;</a>
         </div>
       </div>
       <div style="position:relative; display:flex; justify-content:center; align-items:center; min-height:660px;">
@@ -210,6 +233,34 @@
       </div>
     </div>
   </section>
+
+  <!-- ===== NICE TO MEET YOU ===== -->
+  <section id="meet">
+<!-- ============ INTRO ============ -->
+<section class="intro">
+  <div class="intro-grid">
+    <div class="intro-photo">
+      <div class="intro-blob"></div>
+      <svg width="230" height="300" viewBox="0 0 230 300" fill="none" style="position:absolute;right:-26px;top:60px;z-index:0">
+        <g stroke="#9FB4C0" stroke-width="2" fill="none" opacity="0.65">
+          <circle cx="150" cy="150" r="24"></circle><circle cx="150" cy="150" r="46"></circle><circle cx="150" cy="150" r="68"></circle><circle cx="150" cy="150" r="90"></circle><circle cx="150" cy="150" r="112"></circle><circle cx="150" cy="150" r="134"></circle>
+        </g>
+      </svg>
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="#EC5A2A" style="position:absolute;top:24px;left:24px;z-index:2"><path d="M12 2 L14 10 L22 12 L14 14 L12 22 L10 14 L2 12 L10 10 Z"></path></svg>
+      <div class="intro-arch"><img src="assets/karina-street.jpg" alt="Karina Souza"></div>
+    </div>
+    <div>
+      <div class="eyebrow"><span class="ln"></span><span class="tx">A little about me</span></div>
+      <h2 class="h2" style="margin-bottom:26px">Nice to <em>meet you</em></h2>
+      <p class="intro-lede">I help companies <em>keep</em> the people they can't afford to lose, and build cultures those people are proud to belong to.</p>
+      <p class="serif">I'm <strong>Karina Souza</strong>, a <strong>People &amp; Culture specialist</strong> working at the intersection of <strong>organizational communication</strong>, employee engagement, and talent retention.</p>
+      <p class="serif">I've learned that culture is not a perk. It is the <strong>everyday experience of feeling valued</strong>. My approach is <strong>human first, data-informed always</strong>: I listen to what teams are not saying, find the real reasons people leave, and turn it into a clear plan leaders can act on.</p>
+      <p class="serif" style="margin-bottom:34px">When companies invest in their people, everything else follows: <strong>performance, loyalty, and growth</strong>.</p>
+      <a class="btn" href="portfolio.html">See my portfolio <span style="font-size:18px">→</span></a>
+    </div>
+  </div>
+</section>
+</section>
 
   <!-- ===== CASE STUDIES ===== -->
   <section id="cases" style="font-family:'Source Sans 3',sans-serif;background:var(--silence);color:var(--ink);">
