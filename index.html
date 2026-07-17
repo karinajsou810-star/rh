@@ -102,13 +102,19 @@
   @media(max-width:900px){.intro{padding:56px 24px;}.intro-grid{grid-template-columns:1fr;gap:48px;}.intro-photo{min-height:0;}.intro-blob{width:320px;height:400px;}.intro-arch{width:290px;height:390px;}.h2{font-size:38px;}}
 
   /* ── TESTIMONIALS ── */
-  #testimonials{background:var(--silence);border-top:0.5px solid var(--line);padding:72px 60px 84px;}
-  .tst-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;max-width:960px;}
-  .tst-card{display:flex;flex-direction:column;border:0.5px solid var(--line);background:var(--off);padding:30px 32px;}
-  .tst-quote{font-family:'Times New Roman',Times,serif;font-style:italic;font-size:17.5px;line-height:1.62;color:var(--ink);flex:1;margin-bottom:22px;}
-  .tst-quote::before{content:'\201C';display:block;font-size:44px;line-height:0.6;color:var(--merlot);margin-bottom:14px;font-style:normal;}
-  .tst-who{font-size:10px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:var(--gray);border-top:0.5px solid var(--line);padding-top:14px;}
-  @media(max-width:900px){#testimonials{padding:48px 28px 56px;}.tst-cards{grid-template-columns:1fr;}}
+  #testimonials{background:var(--ink);padding:96px 60px 104px;position:relative;overflow:hidden;}
+  .tst-deco{position:absolute;border-radius:50%;background:#2C2924;}
+  .tst-head{position:relative;z-index:1;text-align:center;margin-bottom:56px;}
+  .tst-eyebrow{display:inline-flex;align-items:center;gap:14px;font-size:11px;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:var(--merlot);margin-bottom:18px;}
+  .tst-eyebrow::before,.tst-eyebrow::after{content:'';width:32px;height:2px;background:var(--merlot);display:block;}
+  .tst-title{font-family:'Times New Roman',Times,serif;font-size:44px;font-weight:400;color:var(--silence);line-height:1.05;}
+  .tst-title em{font-style:italic;color:#EAD7CE;}
+  .tst-cards{position:relative;z-index:1;display:grid;grid-template-columns:repeat(2,1fr);gap:26px;max-width:940px;margin:0 auto;}
+  .tst-card{background:#2C2924;border-radius:18px;padding:40px 38px;text-align:center;display:flex;flex-direction:column;box-shadow:0 24px 48px -28px rgba(0,0,0,0.55);}
+  .tst-quote{font-family:'Times New Roman',Times,serif;font-style:italic;font-size:17.5px;line-height:1.66;color:var(--silence);flex:1;margin-bottom:24px;}
+  .tst-quote::before{content:'\201C';display:block;font-size:46px;line-height:0.6;color:var(--merlot);margin-bottom:16px;font-style:normal;}
+  .tst-who{font-family:'Times New Roman',Times,serif;font-style:italic;font-size:14px;color:rgba(240,232,220,0.55);}
+  @media(max-width:900px){#testimonials{padding:60px 28px 68px;}.tst-cards{grid-template-columns:1fr;}.tst-title{font-size:32px;}}
 
   /* ── CONTACT SECTION ── */
   #contact{background:var(--silence);border-top:0.5px solid var(--line);}
@@ -330,18 +336,22 @@
 
   <!-- ===== TESTIMONIALS ===== -->
   <section id="testimonials">
-    <p class="insights-eyebrow">What they say</p>
-    <h2 class="insights-title">Words from <em>the people I've worked with.</em></h2>
+    <span class="tst-deco" style="top:-110px;right:-90px;width:320px;height:320px;"></span>
+    <span class="tst-deco" style="bottom:-130px;left:-80px;width:280px;height:280px;"></span>
+    <div class="tst-head">
+      <span class="tst-eyebrow">Testimonials</span>
+      <h2 class="tst-title">What are <em>they saying?</em></h2>
+    </div>
     <div class="tst-cards">
 
       <div class="tst-card">
         <p class="tst-quote">I worked alongside Karina for years and I have never met anyone this organized. Schedules, communication, follow-ups: everything planned, nothing forgotten. People trusted her with their entire routine because she never dropped a single thing. She treats the work as if it were her own.</p>
-        <p class="tst-who">Benedita Souza · Operations professional</p>
+        <p class="tst-who">Benedita Souza<br>Operations professional</p>
       </div>
 
       <div class="tst-card">
         <p class="tst-quote">Karina is who you want next to you on a hard day. Calm, clear, and always three steps ahead. She brought structure to everything around us and set the standard for how the work should be done. I would recommend her without a second thought.</p>
-        <p class="tst-who">Ticiana Schultz · Personal assistant</p>
+        <p class="tst-who">Ticiana Schultz<br>Personal assistant</p>
       </div>
 
     </div>
