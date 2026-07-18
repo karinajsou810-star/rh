@@ -1,217 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Case 01 · Karina Souza</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<script src="https://unpkg.com/lucide@latest"></script>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
 <style>
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
-:root{--silence:#F4F0E7;--ice:#C7D4DC;--merlot:#EC5A2A;--ink:#211E1A;--off:#FBF8F1;--line:#E2DAC9;--gray:#8A8478;--body:#54504A;}
-body{font-family:'Source Sans 3','Source Sans Pro',sans-serif;background:var(--off);color:var(--ink);-webkit-font-smoothing:antialiased;}
-nav{padding:20px 60px;border-bottom:0.5px solid var(--line);display:flex;align-items:center;justify-content:space-between;background:var(--silence);}
-.nav-logo{font-family:'Times New Roman',Times,serif;font-size:18px;font-weight:400;color:var(--ink);text-decoration:none;}
-.nav-back{font-size:11px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--merlot);text-decoration:none;border-bottom:0.5px solid rgba(92,26,30,0.3);padding-bottom:1px;}
-.hero{background:var(--merlot);padding:80px 60px 72px;}
-.hero-eyebrow{font-size:10px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:rgba(240,232,220,0.45);margin-bottom:20px;}
-.hero-title{font-family:'Times New Roman',Times,serif;font-size:48px;font-weight:400;line-height:1.1;color:var(--silence);max-width:700px;margin-bottom:32px;}
-.hero-title em{font-style:italic;color:var(--ice);}
-.hero-meta{display:flex;gap:40px;flex-wrap:wrap;}
-.meta-item{display:flex;flex-direction:column;gap:6px;}
-.meta-label{font-size:9px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:rgba(240,232,220,0.35);}
-.meta-value{font-size:13px;font-weight:300;color:rgba(240,232,220,0.7);}
-.stats{background:var(--ink);display:grid;grid-template-columns:repeat(4,1fr);}
-.stat{padding:32px 40px;border-right:0.5px solid rgba(240,232,220,0.08);}
-.stat:last-child{border-right:none;}
-.stat-num{font-family:'Times New Roman',Times,serif;font-size:38px;font-weight:400;color:var(--silence);line-height:1;margin-bottom:8px;}
-.stat-num em{font-style:italic;color:var(--ice);}
-.stat-lbl{font-size:10px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:rgba(240,232,220,0.3);}
-.body{display:grid;grid-template-columns:1fr 1fr;border-top:0.5px solid var(--line);}
-.col-l{padding:60px;border-right:0.5px solid var(--line);}
-.col-r{padding:60px;background:var(--silence);}
-.sec-label{font-size:9px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--gray);margin-bottom:20px;padding-bottom:16px;border-bottom:0.5px solid var(--line);}
-.sec-title{font-family:'Times New Roman',Times,serif;font-size:22px;font-weight:400;line-height:1.3;color:var(--ink);margin-bottom:16px;}
-.sec-text{font-size:14px;font-weight:300;line-height:1.75;color:var(--body);}
-.sec-text em{font-style:italic;font-family:'Times New Roman',Times,serif;color:var(--merlot);font-size:15px;}
-.sec-text+.sec-text{margin-top:16px;}
-.quote{margin-top:36px;padding:28px 32px;background:var(--ink);}
-.quote p{font-family:'Times New Roman',Times,serif;font-size:18px;font-style:italic;line-height:1.55;color:var(--silence);}
-.quote cite{display:block;margin-top:14px;font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:rgba(240,232,220,0.35);font-style:normal;}
-.widget-section{border-top:0.5px solid var(--line);}
-.widget-eyebrow{padding:28px 60px 0;font-size:9px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--gray);}
-footer{background:var(--merlot);padding:32px 60px;display:flex;align-items:center;justify-content:space-between;}
-.footer-note{font-size:12px;font-weight:300;color:rgba(240,232,220,0.4);}
-.footer-cta{font-size:11px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--ice);text-decoration:none;border-bottom:0.5px solid rgba(200,220,232,0.4);padding-bottom:1px;}
-@media(max-width:800px){nav,footer{padding-left:28px;padding-right:28px;}.widget-eyebrow{padding-left:28px;padding-right:28px;}.hero{padding:52px 28px 44px;}.hero-title{font-size:32px;}.stats{grid-template-columns:1fr 1fr;}.stat{padding:24px 20px;}.body{grid-template-columns:1fr;}.col-l,.col-r{padding:40px 28px;}}
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;-webkit-font-smoothing:antialiased;background:#FBF7F1;font-family:'Source Sans 3',sans-serif;}
+  ::selection{background:#B4552D;color:#FBF7F1;}
+  a{color:#B4552D;} a:hover{color:#8F4023;}
+  .nav-back:hover{opacity:0.7;}
+  .cta-btn:hover{background:#8F4023;}
 </style>
 </head>
 <body>
 
-<nav>
-  <a class="nav-logo" href="../index.html">Karina Souza</a>
-  <a class="nav-back" href="../index.html#cases">← Case studies</a>
+<nav style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; padding:22px 48px; border-bottom:1px solid #EBDFD3; background:#FBF7F1;">
+  <a href="../index.html" style="font-family:'Cormorant Garamond',serif; font-style:italic; font-size:24px; color:#3D2C24; text-decoration:none;">Karina Souza</a>
+  <a class="nav-back" href="../index.html#cases" style="font-size:11px; letter-spacing:0.16em; text-transform:uppercase; color:#B4552D; text-decoration:none;">← Case studies</a>
 </nav>
 
-<div class="hero">
-  <p class="hero-eyebrow">Case 01 · End-to-end recruitment · Public employment institute</p>
-  <h1 class="hero-title">How an overwhelming hiring process became a structured candidate journey, and <em>decision time per candidate dropped by 60%.</em></h1>
-  <div class="hero-meta">
-    <div class="meta-item"><span class="meta-label">Sector</span><span class="meta-value">Public employment · Vocational training</span></div>
-    <div class="meta-item"><span class="meta-label">Region</span><span class="meta-value">Portugal</span></div>
-    <div class="meta-item"><span class="meta-label">Scale</span><span class="meta-value">40+ simultaneous processes</span></div>
-    <div class="meta-item"><span class="meta-label">Contracted as</span><span class="meta-value">Talent Acquisition Specialist</span></div>
+<header style="padding:76px 48px 52px; text-align:center; border-bottom:1px solid #EBDFD3;">
+  <div style="font-size:11px; letter-spacing:0.26em; text-transform:uppercase; color:#B4552D;">Case 01 · End-to-end recruitment · Public employment institute</div>
+  <h1 style="font-family:'Cormorant Garamond',serif; font-size:clamp(34px,4.4vw,54px); font-weight:500; line-height:1.1; color:#3D2C24; margin:22px auto 0; max-width:24ch;">How an overwhelming hiring process became a structured candidate journey, and <em style="color:#B4552D;">decision time per candidate dropped by 60%.</em></h1>
+  <div style="display:flex; justify-content:center; gap:34px; flex-wrap:wrap; margin-top:30px; font-size:12px; color:#8A7466;">
+    <span><b style="color:#3D2C24; font-weight:600;">Sector</b> · Public employment &amp; vocational training</span>
+    <span><b style="color:#3D2C24; font-weight:600;">Region</b> · Portugal</span>
+    <span><b style="color:#3D2C24; font-weight:600;">Scale</b> · 40+ simultaneous processes</span>
+    <span><b style="color:#3D2C24; font-weight:600;">Contracted as</b> · Talent Acquisition Specialist</span>
   </div>
-</div>
+</header>
 
-<div class="stats">
-  <div class="stat"><div class="stat-num">8 <em>days</em></div><div class="stat-lbl">Time-to-hire · full cycle</div></div>
-  <div class="stat"><div class="stat-num">+60%</div><div class="stat-lbl">Faster response between phases</div></div>
-  <div class="stat"><div class="stat-num">100%</div><div class="stat-lbl">Interviews with structured record</div></div>
-  <div class="stat"><div class="stat-num">0</div><div class="stat-lbl">Candidates left without response</div></div>
-</div>
+<section style="display:flex; justify-content:center; gap:0; flex-wrap:wrap; padding:34px 48px; background:#F6EDE2; border-bottom:1px solid #EBDFD3;">
+  <div style="text-align:center; padding:8px 44px; border-right:1px solid #E3D4C2;"><div style="font-family:'Cormorant Garamond',serif; font-size:46px; color:#B4552D; line-height:1;">8 <em style="font-size:24px;">days</em></div><div style="font-size:10.5px; letter-spacing:0.12em; text-transform:uppercase; color:#8A7466; margin-top:8px;">Time-to-hire · full cycle</div></div>
+  <div style="text-align:center; padding:8px 44px; border-right:1px solid #E3D4C2;"><div style="font-family:'Cormorant Garamond',serif; font-size:46px; color:#B4552D; line-height:1;">+60%</div><div style="font-size:10.5px; letter-spacing:0.12em; text-transform:uppercase; color:#8A7466; margin-top:8px;">Faster response between phases</div></div>
+  <div style="text-align:center; padding:8px 44px; border-right:1px solid #E3D4C2;"><div style="font-family:'Cormorant Garamond',serif; font-size:46px; color:#B4552D; line-height:1;">100%</div><div style="font-size:10.5px; letter-spacing:0.12em; text-transform:uppercase; color:#8A7466; margin-top:8px;">Interviews with structured record</div></div>
+  <div style="text-align:center; padding:8px 44px;"><div style="font-family:'Cormorant Garamond',serif; font-size:46px; color:#3D2C24; line-height:1;">0</div><div style="font-size:10.5px; letter-spacing:0.12em; text-transform:uppercase; color:#8A7466; margin-top:8px;">Candidates left without response</div></div>
+</section>
 
-<div class="body">
-  <div class="col-l">
-    <p class="sec-label">The challenge</p>
-    <h2 class="sec-title">Hiring had quietly become overwhelming.</h2>
-    <p class="sec-text">Job descriptions arrived as a few vague lines. Screening, scheduling, interview notes, and candidate follow-ups all ran on top of an already full day to day, and each step changed shape depending on who picked it up. When the team needed to make a decision, they depended on scattered notes, subjective impressions, and whoever remembered what.</p>
-    <p class="sec-text">Candidates felt it first. After each interview, they waited for feedback without knowing how long. Follow-ups depended on someone remembering to do them. And with <em>40 open roles simultaneously,</em> qualified people were quietly falling between phases, which is the most expensive way to lose them.</p>
-    <p class="sec-text">With a market average time-to-hire of 23 to 45 days, the team knew their process could be faster. But no one owned the candidate journey from the first call to the first day, so every improvement was impossible to measure, or sustain.</p>
-    <blockquote class="quote">
-      <p>"There were processes that depended on whoever had conducted the interview being available to explain what they had seen. The decision about a candidate was stuck in a person, not in a system."</p>
-      <cite>Ana Barreiro · HR, Public Employment and Training Institute</cite>
-    </blockquote>
+<section style="padding:72px 48px; border-bottom:1px solid #EBDFD3;">
+  <div style="max-width:680px; margin:0 auto;">
+    <div style="font-size:11px; letter-spacing:0.26em; text-transform:uppercase; color:#B4552D; text-align:center;">The challenge</div>
+    <h2 style="font-family:'Cormorant Garamond',serif; font-size:clamp(26px,3vw,36px); font-weight:500; line-height:1.15; color:#3D2C24; text-align:center; margin:16px auto 30px; max-width:22ch;">Hiring had quietly become overwhelming.</h2>
+    <p style="font-size:15px; font-weight:300; line-height:1.8; color:#5E4E42; margin-bottom:16px;">Job descriptions arrived as a few vague lines. Screening, scheduling, interview notes, and candidate follow-ups all ran on top of an already full day to day, and each step changed shape depending on who picked it up. When the team needed to make a decision, they depended on scattered notes, subjective impressions, and whoever remembered what.</p>
+    <p style="font-size:15px; font-weight:300; line-height:1.8; color:#5E4E42; margin-bottom:16px;">Candidates felt it first. After each interview, they waited for feedback without knowing how long. Follow-ups depended on someone remembering to do them. And with <em style="color:#B4552D;">40 open roles simultaneously,</em> qualified people were quietly falling between phases, which is the most expensive way to lose them.</p>
+    <p style="font-size:15px; font-weight:300; line-height:1.8; color:#5E4E42;">With a market average time-to-hire of 23 to 45 days, the team knew their process could be faster. But no one owned the candidate journey from the first call to the first day, so every improvement was impossible to measure, or sustain.</p>
+    <div style="text-align:center; padding:34px 40px 0;">
+      <div style="font-family:'Cormorant Garamond',serif; font-style:italic; font-size:23px; line-height:1.45; color:#3D2C24; max-width:44ch; margin:0 auto;">"There were processes that depended on whoever had conducted the interview being available to explain what they had seen. The decision about a candidate was stuck in a person, not in a system."</div>
+      <div style="font-size:10.5px; letter-spacing:0.18em; text-transform:uppercase; color:#B4552D; margin-top:14px;">Ana Barreiro · HR, Public Employment and Training Institute</div>
+    </div>
   </div>
-  <div class="col-r">
-    <p class="sec-label">The solution</p>
-    <h2 class="sec-title">A structured hiring process, implemented end to end.</h2>
-    <p class="sec-text">Every process now starts with a proper intake conversation: what this person needs to do well in six months, not which keywords match the posting. That profile becomes the screening criteria, and the criteria become a structured interview guide, documented and implemented, so every candidate is measured against the same bar.</p>
-    <p class="sec-text">Around that human approach, supporting systems keep the day to day moving. Each remote interview turns into a structured, shared record the moment the session ends, so decisions stop depending on memory and start relying on consistent information.</p>
-    <p class="sec-text">And the candidate experience is cared for at every stage. When a candidate advances, they receive confirmation and next steps immediately. When they don't, they receive honest, respectful feedback. <em>No candidate is left without a response,</em> so the institute's name gets stronger even when the answer is no.</p>
-    <blockquote class="quote">
-      <p>"From the moment the system went live, the team started arriving at each decision with structured information instead of impressions. And candidates started receiving an immediate response, not when someone remembered."</p>
-      <cite>Ana Barreiro · HR, Public Employment and Training Institute</cite>
-    </blockquote>
+</section>
+
+<section style="padding:72px 48px; background:#F6EDE2; border-bottom:1px solid #EBDFD3;">
+  <div style="max-width:680px; margin:0 auto;">
+    <div style="font-size:11px; letter-spacing:0.26em; text-transform:uppercase; color:#B4552D; text-align:center;">The solution</div>
+    <h2 style="font-family:'Cormorant Garamond',serif; font-size:clamp(26px,3vw,36px); font-weight:500; line-height:1.15; color:#3D2C24; text-align:center; margin:16px auto 30px; max-width:24ch;">A structured hiring process, implemented end to end.</h2>
+    <p style="font-size:15px; font-weight:300; line-height:1.8; color:#5E4E42; margin-bottom:16px;">Every process now starts with a proper intake conversation: what this person needs to do well in six months, not which keywords match the posting. That profile becomes the screening criteria, and the criteria become a structured interview guide, documented and implemented, so every candidate is measured against the same bar.</p>
+    <p style="font-size:15px; font-weight:300; line-height:1.8; color:#5E4E42; margin-bottom:16px;">Around that human approach, supporting systems keep the day to day moving. Each remote interview turns into a structured, shared record the moment the session ends, so decisions stop depending on memory and start relying on consistent information.</p>
+    <p style="font-size:15px; font-weight:300; line-height:1.8; color:#5E4E42;">And the candidate experience is cared for at every stage. When a candidate advances, they receive confirmation and next steps immediately. When they don't, they receive honest, respectful feedback. <em style="color:#B4552D;">No candidate is left without a response,</em> so the institute's name gets stronger even when the answer is no.</p>
+    <div style="text-align:center; padding:34px 40px 0;">
+      <div style="font-family:'Cormorant Garamond',serif; font-style:italic; font-size:23px; line-height:1.45; color:#3D2C24; max-width:44ch; margin:0 auto;">"From the moment the system went live, the team started arriving at each decision with structured information instead of impressions. And candidates started receiving an immediate response, not when someone remembered."</div>
+      <div style="font-size:10.5px; letter-spacing:0.18em; text-transform:uppercase; color:#B4552D; margin-top:14px;">Ana Barreiro · HR, Public Employment and Training Institute</div>
+    </div>
   </div>
-</div>
+</section>
 
-<!-- WIDGET: AI Recruitment Flow Option A, verbatim, accent=#6D4AFF, fricDisplay=flex -->
-<div class="widget-section">
-  <p class="widget-eyebrow">The funnel · before and after AI</p>
-  <div style="box-sizing:border-box;padding:56px;background:#ECEAF6;font-family:'Plus Jakarta Sans',sans-serif;--accent:#6D4AFF;--fric:flex;display:flex;flex-direction:column;gap:16px;align-items:flex-start;">
+<section style="padding:72px 48px; border-bottom:1px solid #EBDFD3;">
+  <div style="max-width:920px; margin:0 auto;">
+    <div style="font-size:11px; letter-spacing:0.26em; text-transform:uppercase; color:#B4552D; text-align:center;">The funnel · before and after AI</div>
+    <h2 style="font-family:'Cormorant Garamond',serif; font-size:clamp(26px,3vw,36px); font-weight:500; line-height:1.15; color:#3D2C24; text-align:center; margin:16px auto 44px; max-width:24ch;">From a slow funnel to <em style="color:#B4552D;">a few smart moments.</em></h2>
 
-    <div style="background:#fff;border-radius:28px;padding:44px;box-shadow:0 24px 60px -28px rgba(31,17,71,0.28);">
-      <div style="font:800 12px/1 'Plus Jakarta Sans',sans-serif;letter-spacing:.14em;color:var(--accent);margin-bottom:10px;">THE FUNNEL</div>
-      <h2 style="font:800 28px/1.15 'Plus Jakarta Sans',sans-serif;color:#181530;margin:0 0 30px;letter-spacing:-0.02em;">From a slow funnel to a few smart moments</h2>
-
-      <!-- BEFORE band -->
-      <div style="background:#F7F7FB;border:1px solid #ECECF3;border-radius:22px;padding:24px 30px 30px;">
-        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:22px;">
-          <div style="display:flex;align-items:center;gap:13px;">
-            <span style="background:#E9E9F0;color:#6C6A80;font:800 12px/1 'Plus Jakarta Sans',sans-serif;letter-spacing:.1em;padding:7px 12px;border-radius:8px;">BEFORE AI</span>
-            <span style="font:600 14px/1 'Plus Jakarta Sans',sans-serif;color:#8A879C;">Seven manual steps, lots of waiting</span>
-          </div>
-          <div style="display:flex;align-items:center;gap:8px;color:#9A98AC;font:700 14px/1 'Plus Jakarta Sans',sans-serif;">
-            <i data-lucide="hourglass" width="15" height="15" style="color:#A9A7BC;"></i><span>≈ 14 days to hire</span>
-          </div>
-        </div>
-        <div style="display:flex;align-items:flex-start;justify-content:center;gap:5px;">
-          <div style="display:flex;flex-direction:column;align-items:center;gap:11px;flex:none;"><div style="width:62px;height:62px;border-radius:18px;display:flex;align-items:center;justify-content:center;background:#F1F2F7;box-shadow:inset 0 0 0 1px rgba(20,18,43,0.05);"><i data-lucide="mouse-pointer-click" width="26" height="26" style="color:#5A5F73;"></i></div><span style="font:600 13px/1.3 'Plus Jakarta Sans',sans-serif;text-align:center;width:84px;color:#3C3A50;">Application</span></div>
-          <div style="display:flex;flex-direction:column;align-items:center;flex:none;"><div style="height:62px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;"><span style="display:var(--fric);align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%;background:#EEEEF4;"><i data-lucide="hourglass" width="13" height="13" style="color:#9A9FB0;"></i></span><i data-lucide="arrow-right" width="22" height="22" style="color:#C9CCD8;"></i></div><span style="height:18px;"></span></div>
-          <div style="display:flex;flex-direction:column;align-items:center;gap:11px;flex:none;"><div style="width:62px;height:62px;border-radius:18px;display:flex;align-items:center;justify-content:center;background:#F1F2F7;box-shadow:inset 0 0 0 1px rgba(20,18,43,0.05);"><i data-lucide="clipboard-list" width="26" height="26" style="color:#5A5F73;"></i></div><span style="font:600 13px/1.3 'Plus Jakarta Sans',sans-serif;text-align:center;width:84px;color:#3C3A50;">Lead</span></div>
-          <div style="display:flex;flex-direction:column;align-items:center;flex:none;"><div style="height:62px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;"><span style="display:var(--fric);align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%;background:#EEEEF4;"><i data-lucide="hourglass" width="13" height="13" style="color:#9A9FB0;"></i></span><i data-lucide="arrow-right" width="22" height="22" style="color:#C9CCD8;"></i></div><span style="height:18px;"></span></div>
-          <div style="display:flex;flex-direction:column;align-items:center;gap:11px;flex:none;"><div style="width:62px;height:62px;border-radius:18px;display:flex;align-items:center;justify-content:center;background:#F1F2F7;box-shadow:inset 0 0 0 1px rgba(20,18,43,0.05);"><i data-lucide="phone-call" width="25" height="25" style="color:#5A5F73;"></i></div><span style="font:600 13px/1.3 'Plus Jakarta Sans',sans-serif;text-align:center;width:84px;color:#3C3A50;">Screening</span></div>
-          <div style="display:flex;flex-direction:column;align-items:center;flex:none;"><div style="height:62px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;"><span style="display:var(--fric);align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%;background:#EEEEF4;"><i data-lucide="hourglass" width="13" height="13" style="color:#9A9FB0;"></i></span><i data-lucide="arrow-right" width="22" height="22" style="color:#C9CCD8;"></i></div><span style="height:18px;"></span></div>
-          <div style="display:flex;flex-direction:column;align-items:center;gap:11px;flex:none;"><div style="width:62px;height:62px;border-radius:18px;display:flex;align-items:center;justify-content:center;background:#F1F2F7;box-shadow:inset 0 0 0 1px rgba(20,18,43,0.05);"><i data-lucide="clipboard-check" width="26" height="26" style="color:#5A5F73;"></i></div><span style="font:600 13px/1.3 'Plus Jakarta Sans',sans-serif;text-align:center;width:84px;color:#3C3A50;">Skills test</span></div>
-          <div style="display:flex;flex-direction:column;align-items:center;flex:none;"><div style="height:62px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;"><span style="display:var(--fric);align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%;background:#EEEEF4;"><i data-lucide="hourglass" width="13" height="13" style="color:#9A9FB0;"></i></span><i data-lucide="arrow-right" width="22" height="22" style="color:#C9CCD8;"></i></div><span style="height:18px;"></span></div>
-          <div style="display:flex;flex-direction:column;align-items:center;gap:11px;flex:none;"><div style="width:62px;height:62px;border-radius:18px;display:flex;align-items:center;justify-content:center;background:#F1F2F7;box-shadow:inset 0 0 0 1px rgba(20,18,43,0.05);"><i data-lucide="calendar-clock" width="25" height="25" style="color:#5A5F73;"></i></div><span style="font:600 13px/1.3 'Plus Jakarta Sans',sans-serif;text-align:center;width:84px;color:#3C3A50;">Scheduling</span></div>
-          <div style="display:flex;flex-direction:column;align-items:center;flex:none;"><div style="height:62px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;"><span style="display:var(--fric);align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%;background:#EEEEF4;"><i data-lucide="hourglass" width="13" height="13" style="color:#9A9FB0;"></i></span><i data-lucide="arrow-right" width="22" height="22" style="color:#C9CCD8;"></i></div><span style="height:18px;"></span></div>
-          <div style="display:flex;flex-direction:column;align-items:center;gap:11px;flex:none;"><div style="width:62px;height:62px;border-radius:18px;display:flex;align-items:center;justify-content:center;background:#F1F2F7;box-shadow:inset 0 0 0 1px rgba(20,18,43,0.05);"><i data-lucide="messages-square" width="25" height="25" style="color:#5A5F73;"></i></div><span style="font:600 13px/1.3 'Plus Jakarta Sans',sans-serif;text-align:center;width:84px;color:#3C3A50;">Interview</span></div>
-          <div style="display:flex;flex-direction:column;align-items:center;flex:none;"><div style="height:62px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;"><span style="display:var(--fric);align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%;background:#EEEEF4;"><i data-lucide="hourglass" width="13" height="13" style="color:#9A9FB0;"></i></span><i data-lucide="arrow-right" width="22" height="22" style="color:#C9CCD8;"></i></div><span style="height:18px;"></span></div>
-          <div style="display:flex;flex-direction:column;align-items:center;gap:11px;flex:none;"><div style="width:62px;height:62px;border-radius:18px;display:flex;align-items:center;justify-content:center;background:#F1F2F7;box-shadow:inset 0 0 0 1px rgba(20,18,43,0.05);"><i data-lucide="briefcase" width="25" height="25" style="color:#5A5F73;"></i></div><span style="font:600 13px/1.3 'Plus Jakarta Sans',sans-serif;text-align:center;width:84px;color:#3C3A50;">Job offer</span></div>
-        </div>
+    <div style="border:1px solid #EBDFD3; background:#fff; padding:28px 30px;">
+      <div style="display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:8px;">
+        <div style="font-size:11px; letter-spacing:0.2em; text-transform:uppercase; color:#8A7466;"><b style="color:#3D2C24;">Before AI</b> · Seven manual steps, lots of waiting</div>
+        <div style="font-family:'Cormorant Garamond',serif; font-style:italic; font-size:20px; color:#8A7466;">≈ 14 days to hire</div>
       </div>
-
-      <!-- transformation pill -->
-      <div style="display:flex;justify-content:center;margin:10px 0;">
-        <div style="display:flex;align-items:center;gap:8px;background:#fff;border:1px solid color-mix(in oklch, var(--accent), white 72%);padding:8px 16px;border-radius:999px;box-shadow:0 8px 22px -10px rgba(31,17,71,0.22);">
-          <i data-lucide="sparkles" width="15" height="15" style="color:var(--accent);"></i>
-          <span style="font:700 12px/1 'Plus Jakarta Sans',sans-serif;color:var(--accent);letter-spacing:.03em;">AI removes 2 steps &amp; the waiting in between</span>
-        </div>
+      <div style="display:flex; align-items:flex-start; justify-content:center; gap:10px; flex-wrap:wrap; margin-top:22px;">
+        <div style="display:flex; flex-direction:column; align-items:center; gap:9px; width:76px;"><span style="width:54px; height:54px; border-radius:16px; background:#F6EDE2; border:1px solid #E3D4C2; display:flex; align-items:center; justify-content:center; color:#8A7466;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l7 17 2.5-7.5L21 11z"></path></svg></span><span style="font-size:11px; color:#5E4E42; text-align:center;">Application</span></div>
+        <span style="color:#C9B8A6; margin-top:18px;">→</span>
+        <div style="display:flex; flex-direction:column; align-items:center; gap:9px; width:76px;"><span style="width:54px; height:54px; border-radius:16px; background:#F6EDE2; border:1px solid #E3D4C2; display:flex; align-items:center; justify-content:center; color:#8A7466;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.5"></circle><path d="M5 20c1.2-3.2 3.8-5 7-5s5.8 1.8 7 5"></path></svg></span><span style="font-size:11px; color:#5E4E42; text-align:center;">Lead</span></div>
+        <span style="color:#C9B8A6; margin-top:18px;">→</span>
+        <div style="display:flex; flex-direction:column; align-items:center; gap:9px; width:76px;"><span style="width:54px; height:54px; border-radius:16px; background:#F6EDE2; border:1px solid #E3D4C2; display:flex; align-items:center; justify-content:center; color:#8A7466;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16l-6.5 7.5V19l-3 1.5v-8z"></path></svg></span><span style="font-size:11px; color:#5E4E42; text-align:center;">Screening</span></div>
+        <span style="color:#C9B8A6; margin-top:18px;">→</span>
+        <div style="display:flex; flex-direction:column; align-items:center; gap:9px; width:76px;"><span style="width:54px; height:54px; border-radius:16px; background:#F6EDE2; border:1px solid #E3D4C2; display:flex; align-items:center; justify-content:center; color:#8A7466;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4" width="14" height="17" rx="2"></rect><path d="M9 4.5V3h6v1.5"></path><path d="M9 13l2 2 4-4.5"></path></svg></span><span style="font-size:11px; color:#5E4E42; text-align:center;">Skills test</span></div>
+        <span style="color:#C9B8A6; margin-top:18px;">→</span>
+        <div style="display:flex; flex-direction:column; align-items:center; gap:9px; width:76px;"><span style="width:54px; height:54px; border-radius:16px; background:#F6EDE2; border:1px solid #E3D4C2; display:flex; align-items:center; justify-content:center; color:#8A7466;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="15" rx="2"></rect><path d="M4 9.5h16M8 3v4M16 3v4"></path><circle cx="12" cy="14.5" r="2.2"></circle></svg></span><span style="font-size:11px; color:#5E4E42; text-align:center;">Scheduling</span></div>
+        <span style="color:#C9B8A6; margin-top:18px;">→</span>
+        <div style="display:flex; flex-direction:column; align-items:center; gap:9px; width:76px;"><span style="width:54px; height:54px; border-radius:16px; background:#F6EDE2; border:1px solid #E3D4C2; display:flex; align-items:center; justify-content:center; color:#8A7466;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8.5" r="3"></circle><path d="M3.5 20c1-2.8 3-4.4 5.5-4.4s4.5 1.6 5.5 4.4"></path><circle cx="16.5" cy="9.5" r="2.4"></circle><path d="M16 15.6c2.3 0.2 4 1.7 4.7 4.4"></path></svg></span><span style="font-size:11px; color:#5E4E42; text-align:center;">Interview</span></div>
+        <span style="color:#C9B8A6; margin-top:18px;">→</span>
+        <div style="display:flex; flex-direction:column; align-items:center; gap:9px; width:76px;"><span style="width:54px; height:54px; border-radius:16px; background:#F6EDE2; border:1px solid #E3D4C2; display:flex; align-items:center; justify-content:center; color:#8A7466;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="8" width="16" height="12" rx="2"></rect><path d="M9 8V6a3 3 0 0 1 6 0v2M4 13h16"></path></svg></span><span style="font-size:11px; color:#5E4E42; text-align:center;">Job offer</span></div>
       </div>
+    </div>
 
-      <!-- AFTER band -->
-      <div style="background:color-mix(in oklch, var(--accent), white 92%);border:1px solid color-mix(in oklch, var(--accent), white 74%);border-radius:22px;padding:24px 30px 30px;">
-        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:22px;">
-          <div style="display:flex;align-items:center;gap:13px;">
-            <span style="background:var(--accent);color:#fff;font:800 12px/1 'Plus Jakarta Sans',sans-serif;letter-spacing:.1em;padding:7px 12px;border-radius:8px;box-shadow:0 6px 16px -7px color-mix(in oklch, var(--accent), transparent 50%);">AFTER AI</span>
-            <span style="font:600 14px/1 'Plus Jakarta Sans',sans-serif;color:color-mix(in oklch, var(--accent), black 8%);">Five steps, automated triage</span>
-          </div>
-          <div style="display:flex;align-items:center;gap:8px;color:var(--accent);font:800 14px/1 'Plus Jakarta Sans',sans-serif;">
-            <i data-lucide="zap" width="15" height="15" style="color:var(--accent);"></i><span>≈ 3 days to hire</span>
-          </div>
-        </div>
-        <div style="display:flex;align-items:flex-start;justify-content:center;gap:7px;">
-          <div style="display:flex;flex-direction:column;align-items:center;gap:11px;flex:none;"><div style="width:62px;height:62px;border-radius:18px;display:flex;align-items:center;justify-content:center;background:color-mix(in oklch, var(--accent), white 86%);box-shadow:inset 0 0 0 1px color-mix(in oklch, var(--accent), white 68%);"><i data-lucide="mouse-pointer-click" width="26" height="26" style="color:var(--accent);"></i></div><span style="font:600 13px/1.3 'Plus Jakarta Sans',sans-serif;text-align:center;width:90px;color:#2A2640;">Application</span></div>
-          <div style="display:flex;flex-direction:column;align-items:center;flex:none;"><div style="height:62px;display:flex;align-items:center;justify-content:center;"><i data-lucide="arrow-right" width="24" height="24" style="color:var(--accent);"></i></div><span style="height:18px;"></span></div>
-          <div style="display:flex;flex-direction:column;align-items:center;gap:11px;flex:none;"><div style="position:relative;width:62px;height:62px;border-radius:18px;display:flex;align-items:center;justify-content:center;background:color-mix(in oklch, var(--accent), white 86%);box-shadow:inset 0 0 0 1px color-mix(in oklch, var(--accent), white 68%);"><i data-lucide="bot" width="27" height="27" style="color:var(--accent);"></i><span style="position:absolute;top:-7px;right:-7px;width:22px;height:22px;border-radius:50%;background:var(--accent);display:flex;align-items:center;justify-content:center;box-shadow:0 4px 10px -3px color-mix(in oklch, var(--accent), transparent 40%);"><i data-lucide="sparkles" width="12" height="12" style="color:#fff;"></i></span></div><span style="font:600 13px/1.3 'Plus Jakarta Sans',sans-serif;text-align:center;width:90px;color:#2A2640;">AI interview</span></div>
-          <div style="display:flex;flex-direction:column;align-items:center;flex:none;"><div style="height:62px;display:flex;align-items:center;justify-content:center;"><i data-lucide="plus" width="22" height="22" style="color:var(--accent);"></i></div><span style="height:18px;"></span></div>
-          <div style="display:flex;flex-direction:column;align-items:center;gap:11px;flex:none;"><div style="position:relative;width:128px;height:62px;border-radius:18px;display:flex;align-items:center;justify-content:center;gap:11px;background:linear-gradient(135deg,var(--accent),color-mix(in oklch, var(--accent), white 18%));box-shadow:0 12px 26px -10px color-mix(in oklch, var(--accent), transparent 35%);"><i data-lucide="phone-call" width="20" height="20" style="color:#fff;"></i><i data-lucide="clipboard-check" width="20" height="20" style="color:#fff;"></i><i data-lucide="calendar-clock" width="20" height="20" style="color:#fff;"></i><span style="position:absolute;top:-8px;right:-8px;width:24px;height:24px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 5px 12px -3px rgba(31,17,71,0.3);"><i data-lucide="sparkles" width="13" height="13" style="color:var(--accent);"></i></span></div><span style="font:700 13px/1.3 'Plus Jakarta Sans',sans-serif;text-align:center;width:128px;color:color-mix(in oklch, var(--accent), black 14%);">AI tech stack</span></div>
-          <div style="display:flex;flex-direction:column;align-items:center;flex:none;"><div style="height:62px;display:flex;align-items:center;justify-content:center;"><i data-lucide="arrow-right" width="24" height="24" style="color:var(--accent);"></i></div><span style="height:18px;"></span></div>
-          <div style="display:flex;flex-direction:column;align-items:center;gap:11px;flex:none;"><div style="width:62px;height:62px;border-radius:18px;display:flex;align-items:center;justify-content:center;background:color-mix(in oklch, var(--accent), white 86%);box-shadow:inset 0 0 0 1px color-mix(in oklch, var(--accent), white 68%);"><i data-lucide="users" width="26" height="26" style="color:var(--accent);"></i></div><span style="font:600 13px/1.3 'Plus Jakarta Sans',sans-serif;text-align:center;width:90px;color:#2A2640;">Interview</span></div>
-          <div style="display:flex;flex-direction:column;align-items:center;flex:none;"><div style="height:62px;display:flex;align-items:center;justify-content:center;"><i data-lucide="arrow-right" width="24" height="24" style="color:var(--accent);"></i></div><span style="height:18px;"></span></div>
-          <div style="display:flex;flex-direction:column;align-items:center;gap:11px;flex:none;"><div style="width:62px;height:62px;border-radius:18px;display:flex;align-items:center;justify-content:center;background:color-mix(in oklch, var(--accent), white 86%);box-shadow:inset 0 0 0 1px color-mix(in oklch, var(--accent), white 68%);"><i data-lucide="briefcase" width="25" height="25" style="color:var(--accent);"></i></div><span style="font:600 13px/1.3 'Plus Jakarta Sans',sans-serif;text-align:center;width:90px;color:#2A2640;">Job offer</span></div>
-        </div>
+    <div style="display:flex; justify-content:center; padding:16px 0;">
+      <span style="font-family:'Cormorant Garamond',serif; font-style:italic; font-size:17px; color:#B4552D;">↓ AI removes 2 steps &amp; the waiting in between</span>
+    </div>
 
-        <!-- metrics -->
-        <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:30px;">
-          <div style="background:#fff;border:1px solid color-mix(in oklch, var(--accent), white 80%);border-radius:18px;padding:18px 22px;">
-            <div style="display:flex;align-items:center;gap:9px;margin-bottom:13px;"><span style="width:30px;height:30px;border-radius:9px;background:color-mix(in oklch, var(--accent), white 88%);display:flex;align-items:center;justify-content:center;"><i data-lucide="timer" width="16" height="16" style="color:var(--accent);"></i></span><span style="font:700 13px/1 'Plus Jakarta Sans',sans-serif;color:#5A5770;letter-spacing:.03em;">Time-to-hire</span></div>
-            <div style="display:flex;align-items:center;gap:12px;"><span style="font:500 17px/1 'Plus Jakarta Sans',sans-serif;color:#9A98AC;text-decoration:line-through;">14 days</span><i data-lucide="arrow-right" width="18" height="18" style="color:var(--accent);"></i><span style="font:800 21px/1 'Plus Jakarta Sans',sans-serif;color:#181530;">3 days</span></div>
-          </div>
-          <div style="background:#fff;border:1px solid color-mix(in oklch, var(--accent), white 80%);border-radius:18px;padding:18px 22px;">
-            <div style="display:flex;align-items:center;gap:9px;margin-bottom:13px;"><span style="width:30px;height:30px;border-radius:9px;background:color-mix(in oklch, var(--accent), white 88%);display:flex;align-items:center;justify-content:center;"><i data-lucide="zap" width="16" height="16" style="color:var(--accent);"></i></span><span style="font:700 13px/1 'Plus Jakarta Sans',sans-serif;color:#5A5770;letter-spacing:.03em;">Screening</span></div>
-            <div style="display:flex;align-items:center;gap:12px;"><span style="font:500 17px/1 'Plus Jakarta Sans',sans-serif;color:#9A98AC;text-decoration:line-through;">Manual</span><i data-lucide="arrow-right" width="18" height="18" style="color:var(--accent);"></i><span style="font:800 21px/1 'Plus Jakarta Sans',sans-serif;color:#181530;">Automated</span></div>
-          </div>
-          <div style="background:#fff;border:1px solid color-mix(in oklch, var(--accent), white 80%);border-radius:18px;padding:18px 22px;">
-            <div style="display:flex;align-items:center;gap:9px;margin-bottom:13px;"><span style="width:30px;height:30px;border-radius:9px;background:color-mix(in oklch, var(--accent), white 88%);display:flex;align-items:center;justify-content:center;"><i data-lucide="scale" width="16" height="16" style="color:var(--accent);"></i></span><span style="font:700 13px/1 'Plus Jakarta Sans',sans-serif;color:#5A5770;letter-spacing:.03em;">Evaluation</span></div>
-            <div style="display:flex;align-items:center;gap:12px;"><span style="font:500 17px/1 'Plus Jakarta Sans',sans-serif;color:#9A98AC;text-decoration:line-through;">Subjective</span><i data-lucide="arrow-right" width="18" height="18" style="color:var(--accent);"></i><span style="font:800 21px/1 'Plus Jakarta Sans',sans-serif;color:#181530;">Structured &amp; blind</span></div>
-          </div>
-          <div style="background:#fff;border:1px solid color-mix(in oklch, var(--accent), white 80%);border-radius:18px;padding:18px 22px;">
-            <div style="display:flex;align-items:center;gap:9px;margin-bottom:13px;"><span style="width:30px;height:30px;border-radius:9px;background:color-mix(in oklch, var(--accent), white 88%);display:flex;align-items:center;justify-content:center;"><i data-lucide="trending-up" width="16" height="16" style="color:var(--accent);"></i></span><span style="font:700 13px/1 'Plus Jakarta Sans',sans-serif;color:#5A5770;letter-spacing:.03em;">Throughput</span></div>
-            <div style="display:flex;align-items:center;gap:12px;"><span style="font:500 17px/1 'Plus Jakarta Sans',sans-serif;color:#9A98AC;text-decoration:line-through;">1× capacity</span><i data-lucide="arrow-right" width="18" height="18" style="color:var(--accent);"></i><span style="font:800 21px/1 'Plus Jakarta Sans',sans-serif;color:#181530;">5× candidates</span></div>
-          </div>
-        </div>
+    <div style="border:1.5px solid #B4552D; background:#fff; padding:28px 30px; box-shadow:0 20px 44px -28px rgba(180,85,45,0.35);">
+      <div style="display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:8px;">
+        <div style="font-size:11px; letter-spacing:0.2em; text-transform:uppercase; color:#B4552D;"><b>After AI</b> · Five steps, automated triage</div>
+        <div style="font-family:'Cormorant Garamond',serif; font-style:italic; font-size:20px; color:#B4552D;">≈ 3 days to hire</div>
       </div>
+      <div style="display:flex; align-items:flex-start; justify-content:center; gap:12px; flex-wrap:wrap; margin-top:22px;">
+        <div style="display:flex; flex-direction:column; align-items:center; gap:9px; width:84px;"><span style="width:56px; height:56px; border-radius:16px; background:#F6EDE2; border:1px solid #E3D4C2; display:flex; align-items:center; justify-content:center; color:#8A7466;"><svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l7 17 2.5-7.5L21 11z"></path></svg></span><span style="font-size:11.5px; color:#5E4E42; text-align:center;">Application</span></div>
+        <span style="color:#B4552D; margin-top:19px;">→</span>
+        <div style="display:flex; flex-direction:column; align-items:center; gap:9px; width:84px;"><span style="position:relative; width:56px; height:56px; border-radius:16px; background:#B4552D; display:flex; align-items:center; justify-content:center; color:#FBF7F1; box-shadow:0 12px 24px -12px rgba(180,85,45,0.55);"><svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="8" width="14" height="10" rx="2.5"></rect><path d="M12 8V5M9.5 4.8h5"></path><circle cx="9.5" cy="13" r="0.6" fill="currentColor"></circle><circle cx="14.5" cy="13" r="0.6" fill="currentColor"></circle></svg><span style="position:absolute; top:-7px; right:-7px; width:20px; height:20px; border-radius:50%; background:#3D2C24; display:flex; align-items:center; justify-content:center;"><svg width="11" height="11" viewBox="0 0 24 24" fill="#FBF7F1"><path d="M12 3l1.8 6.2L20 11l-6.2 1.8L12 19l-1.8-6.2L4 11l6.2-1.8z"></path></svg></span></span><span style="font-size:11.5px; font-weight:600; color:#B4552D; text-align:center;">AI interview</span></div>
+        <span style="color:#B4552D; margin-top:19px;">+</span>
+        <div style="display:flex; flex-direction:column; align-items:center; gap:9px; width:130px;"><span style="position:relative; width:118px; height:56px; border-radius:16px; background:#B4552D; display:flex; align-items:center; justify-content:center; gap:12px; color:#FBF7F1; box-shadow:0 12px 24px -12px rgba(180,85,45,0.55);"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l1.5 4.5-2.2 1.8a13 13 0 0 0 5.4 5.4l1.8-2.2L20 15v4a1.5 1.5 0 0 1-1.7 1.5C10.5 19.6 4.4 13.5 3.5 5.7A1.5 1.5 0 0 1 5 4z"></path></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4" width="14" height="17" rx="2"></rect><path d="M9 4.5V3h6v1.5"></path><path d="M9 13l2 2 4-4.5"></path></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="15" rx="2"></rect><path d="M4 9.5h16M8 3v4M16 3v4"></path><path d="M10.5 15l1.5 1.5 3-3.5"></path></svg><span style="position:absolute; top:-7px; right:-7px; width:20px; height:20px; border-radius:50%; background:#FBF7F1; border:1px solid #E3D4C2; display:flex; align-items:center; justify-content:center;"><svg width="11" height="11" viewBox="0 0 24 24" fill="#B4552D"><path d="M12 3l1.8 6.2L20 11l-6.2 1.8L12 19l-1.8-6.2L4 11l6.2-1.8z"></path></svg></span></span><span style="font-size:11.5px; font-weight:600; color:#B4552D; text-align:center;">AI tech stack</span></div>
+        <span style="color:#B4552D; margin-top:19px;">→</span>
+        <div style="display:flex; flex-direction:column; align-items:center; gap:9px; width:84px;"><span style="width:56px; height:56px; border-radius:16px; background:#F6EDE2; border:1px solid #E3D4C2; display:flex; align-items:center; justify-content:center; color:#8A7466;"><svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8.5" r="3"></circle><path d="M3.5 20c1-2.8 3-4.4 5.5-4.4s4.5 1.6 5.5 4.4"></path><circle cx="16.5" cy="9.5" r="2.4"></circle><path d="M16 15.6c2.3 0.2 4 1.7 4.7 4.4"></path></svg></span><span style="font-size:11.5px; color:#5E4E42; text-align:center;">Interview</span></div>
+        <span style="color:#B4552D; margin-top:19px;">→</span>
+        <div style="display:flex; flex-direction:column; align-items:center; gap:9px; width:84px;"><span style="width:56px; height:56px; border-radius:16px; background:#F6EDE2; border:1px solid #E3D4C2; display:flex; align-items:center; justify-content:center; color:#8A7466;"><svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="8" width="16" height="12" rx="2"></rect><path d="M9 8V6a3 3 0 0 1 6 0v2M4 13h16"></path></svg></span><span style="font-size:11.5px; color:#5E4E42; text-align:center;">Job offer</span></div>
+      </div>
+    </div>
 
-      <!-- benefits -->
-      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:28px;">
-        <div style="background:#fff;border:1px solid #EEEDF4;border-radius:18px;padding:22px;box-shadow:0 4px 14px -8px rgba(31,17,71,0.1);"><div style="width:44px;height:44px;border-radius:12px;background:color-mix(in oklch, var(--accent), white 88%);display:flex;align-items:center;justify-content:center;margin-bottom:14px;"><i data-lucide="timer" width="22" height="22" style="color:var(--accent);"></i></div><div style="font:700 15px/1.3 'Plus Jakarta Sans',sans-serif;color:#181530;">Less time on screening</div><div style="font:400 14px/1.5 'Plus Jakarta Sans',sans-serif;color:#6A6781;margin-top:5px;">Recruiters focus on high-value work instead of manual triage.</div></div>
-        <div style="background:#fff;border:1px solid #EEEDF4;border-radius:18px;padding:22px;box-shadow:0 4px 14px -8px rgba(31,17,71,0.1);"><div style="width:44px;height:44px;border-radius:12px;background:color-mix(in oklch, var(--accent), white 88%);display:flex;align-items:center;justify-content:center;margin-bottom:14px;"><i data-lucide="scale" width="22" height="22" style="color:var(--accent);"></i></div><div style="font:700 15px/1.3 'Plus Jakarta Sans',sans-serif;color:#181530;">Bias removed at the source</div><div style="font:400 14px/1.5 'Plus Jakarta Sans',sans-serif;color:#6A6781;margin-top:5px;">Structured, consistent evaluation lifts the quality of every hire.</div></div>
-        <div style="background:#fff;border:1px solid #EEEDF4;border-radius:18px;padding:22px;box-shadow:0 4px 14px -8px rgba(31,17,71,0.1);"><div style="width:44px;height:44px;border-radius:12px;background:color-mix(in oklch, var(--accent), white 88%);display:flex;align-items:center;justify-content:center;margin-bottom:14px;"><i data-lucide="users" width="22" height="22" style="color:var(--accent);"></i></div><div style="font:700 15px/1.3 'Plus Jakarta Sans',sans-serif;color:#181530;">More candidates, managed</div><div style="font:400 14px/1.5 'Plus Jakarta Sans',sans-serif;color:#6A6781;margin-top:5px;">Higher throughput with a dramatically shorter time-to-hire.</div></div>
-        <div style="background:#fff;border:1px solid #EEEDF4;border-radius:18px;padding:22px;box-shadow:0 4px 14px -8px rgba(31,17,71,0.1);"><div style="width:44px;height:44px;border-radius:12px;background:color-mix(in oklch, var(--accent), white 88%);display:flex;align-items:center;justify-content:center;margin-bottom:14px;"><i data-lucide="trending-up" width="22" height="22" style="color:var(--accent);"></i></div><div style="font:700 15px/1.3 'Plus Jakarta Sans',sans-serif;color:#181530;">Hiring that scales</div><div style="font:400 14px/1.5 'Plus Jakarta Sans',sans-serif;color:#6A6781;margin-top:5px;">Reach wider sources without adding recruiter headcount.</div></div>
+    <div style="margin-top:44px; border-top:1px solid #EBDFD3;">
+      <div style="display:grid; grid-template-columns:1fr 1fr 1fr; align-items:center; border-bottom:1px solid #EBDFD3; padding:16px 6px;">
+        <div style="font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#3D2C24; font-weight:600;">Time-to-hire</div>
+        <div style="text-align:center; font-size:14px; color:#8A7466; text-decoration:line-through;">14 days</div>
+        <div style="text-align:right; font-family:'Cormorant Garamond',serif; font-size:22px; color:#B4552D;">3 days</div>
+      </div>
+      <div style="display:grid; grid-template-columns:1fr 1fr 1fr; align-items:center; border-bottom:1px solid #EBDFD3; padding:16px 6px;">
+        <div style="font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#3D2C24; font-weight:600;">Screening</div>
+        <div style="text-align:center; font-size:14px; color:#8A7466; text-decoration:line-through;">Manual</div>
+        <div style="text-align:right; font-family:'Cormorant Garamond',serif; font-size:22px; color:#B4552D;">Automated</div>
+      </div>
+      <div style="display:grid; grid-template-columns:1fr 1fr 1fr; align-items:center; border-bottom:1px solid #EBDFD3; padding:16px 6px;">
+        <div style="font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#3D2C24; font-weight:600;">Evaluation</div>
+        <div style="text-align:center; font-size:14px; color:#8A7466; text-decoration:line-through;">Subjective</div>
+        <div style="text-align:right; font-family:'Cormorant Garamond',serif; font-size:22px; color:#B4552D;">Structured &amp; blind</div>
+      </div>
+      <div style="display:grid; grid-template-columns:1fr 1fr 1fr; align-items:center; border-bottom:1px solid #EBDFD3; padding:16px 6px;">
+        <div style="font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#3D2C24; font-weight:600;">Throughput</div>
+        <div style="text-align:center; font-size:14px; color:#8A7466; text-decoration:line-through;">1× capacity</div>
+        <div style="text-align:right; font-family:'Cormorant Garamond',serif; font-size:22px; color:#B4552D;">5× candidates</div>
+      </div>
+    </div>
+
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:16px; margin-top:44px;">
+      <div style="background:#F6EDE2; border:1px solid #EBDFD3; padding:22px 22px;">
+        <div style="font-family:'Cormorant Garamond',serif; font-style:italic; font-size:20px; color:#B4552D;">Less time on screening</div>
+        <div style="font-size:12.5px; font-weight:300; line-height:1.65; color:#5E4E42; margin-top:8px;">Recruiters focus on the human side of hiring instead of manual triage.</div>
+      </div>
+      <div style="background:#F6EDE2; border:1px solid #EBDFD3; padding:22px 22px;">
+        <div style="font-family:'Cormorant Garamond',serif; font-style:italic; font-size:20px; color:#B4552D;">Bias removed at the source</div>
+        <div style="font-size:12.5px; font-weight:300; line-height:1.65; color:#5E4E42; margin-top:8px;">Structured, consistent evaluation lifts the quality of every hire.</div>
+      </div>
+      <div style="background:#F6EDE2; border:1px solid #EBDFD3; padding:22px 22px;">
+        <div style="font-family:'Cormorant Garamond',serif; font-style:italic; font-size:20px; color:#B4552D;">A candidate experience that holds</div>
+        <div style="font-size:12.5px; font-weight:300; line-height:1.65; color:#5E4E42; margin-top:8px;">Clear communication at every stage, with a much shorter time-to-hire.</div>
+      </div>
+      <div style="background:#F6EDE2; border:1px solid #EBDFD3; padding:22px 22px;">
+        <div style="font-family:'Cormorant Garamond',serif; font-style:italic; font-size:20px; color:#B4552D;">Hiring that scales</div>
+        <div style="font-size:12.5px; font-weight:300; line-height:1.65; color:#5E4E42; margin-top:8px;">Reach wider sources without adding recruiter headcount.</div>
       </div>
     </div>
   </div>
-</div>
+</section>
 
-<footer>
-  <span class="footer-note">Karina Souza · People Operations Consultant</span>
-  <a class="footer-cta" href="https://calendly.com/karinajsou810/new-meeting" target="_blank" rel="noopener">Work with me ↗</a>
+<footer style="padding:34px 48px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:14px; background:#FBF7F1;">
+  <span style="font-family:'Cormorant Garamond',serif; font-style:italic; font-size:18px; color:#3D2C24;">Karina Souza · People &amp; Operations</span>
+  <a class="cta-btn" href="https://calendly.com/karinajsou810/new-meeting" target="_blank" rel="noopener" style="display:inline-flex; background:#B4552D; color:#FBF7F1; font-size:11.5px; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; text-decoration:none; padding:13px 28px; border-radius:100px;">Book a free fit call ↗</a>
 </footer>
 
-<script>
-(function renderIcons(){
-  if(window.lucide && window.lucide.createIcons){
-    try{ lucide.createIcons(); } catch(e){}
-  } else {
-    setTimeout(renderIcons, 50);
-  }
-})();
-</script>
 </body>
 </html>
