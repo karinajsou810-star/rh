@@ -88,6 +88,28 @@
   .tools-row{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;max-width:760px;margin:0 auto;}
   .tool-chip{font-family:'Bricolage Grotesque',sans-serif;font-size:14px;font-weight:600;color:#211E1A;background:#F4F0E7;border:1px solid #D7CFBD;border-radius:100px;padding:10px 22px;}
 
+  /* work samples */
+  .work{max-width:1180px;margin:0 auto;padding:110px 48px 40px;}
+  .work-lede{font-family:'Newsreader',serif;font-size:20px;line-height:1.55;color:#54504A;max-width:44ch;margin:26px 0 56px;}
+  .work-lede em{font-style:italic;color:#EC5A2A;}
+  .work-row{margin-bottom:56px;}
+  .work-row-head{display:flex;align-items:center;gap:12px;margin-bottom:22px;}
+  .work-dot{width:11px;height:11px;border-radius:50%;}
+  .work-row-name{font-size:13px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#211E1A;}
+  .work-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:18px;}
+  .work-card{display:block;text-decoration:none;}
+  .work-frame{border:1px solid #DBD4C5;border-radius:12px;overflow:hidden;background:#fff;box-shadow:0 14px 30px -18px rgba(33,30,26,0.35);transition:transform .22s ease, box-shadow .22s ease;}
+  .work-card:nth-child(odd) .work-frame{transform:rotate(-1.2deg);}
+  .work-card:nth-child(even) .work-frame{transform:rotate(1deg);}
+  .work-card:hover .work-frame{transform:rotate(0deg) translateY(-4px);box-shadow:0 22px 44px -20px rgba(33,30,26,0.45);}
+  .work-frame img{width:100%;display:block;aspect-ratio:4/3;object-fit:cover;object-position:top;}
+  .work-cap{font-size:10.5px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:#8A8478;margin-top:12px;text-align:center;}
+  @media(max-width:900px){
+    .work{padding:64px 24px 20px;}
+    .work-grid{display:flex;overflow-x:auto;gap:14px;padding-bottom:12px;scroll-snap-type:x mandatory;}
+    .work-card{flex:0 0 62%;scroll-snap-align:start;}
+  }
+
   /* experience */
   .exp{max-width:1120px;margin:0 auto;padding:110px 48px 100px}
   .exp-row{display:grid;grid-template-columns:190px 1fr;gap:56px;padding:38px 0;border-top:1px solid #DBD4C5}
@@ -256,6 +278,36 @@
         <span class="tool-chip">Slack &amp; WhatsApp Business</span>
         <span class="tool-chip">AI &amp; automation tools</span>
       </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============ WORK SAMPLES ============ -->
+<section class="work" id="work">
+  <div class="eyebrow"><span class="ln"></span><span class="tx">Work samples</span></div>
+  <h2 class="h2">What the work <em>looks like</em></h2>
+  <p class="work-lede">Recreated from deliverables I produce every week. The names and numbers are fictional. <em>The standard is not.</em></p>
+
+  <div class="work-row">
+    <div class="work-row-head"><span class="work-dot" style="background:#9DB089;"></span><span class="work-row-name">The human lens</span></div>
+    <div class="work-grid">
+      <a class="work-card" href="assets/sample-h1.jpg" target="_blank" rel="noopener"><span class="work-frame"><img src="assets/sample-h1.jpg" alt="Team coverage planner"></span><p class="work-cap">Coverage planner</p></a>
+      <a class="work-card" href="assets/sample-h2.jpg" target="_blank" rel="noopener"><span class="work-frame"><img src="assets/sample-h2.jpg" alt="First-week onboarding checklist"></span><p class="work-cap">First-week onboarding</p></a>
+      <a class="work-card" href="assets/sample-h3.jpg" target="_blank" rel="noopener"><span class="work-frame"><img src="assets/sample-h3.jpg" alt="Employee journey overview"></span><p class="work-cap">Employee journey</p></a>
+      <a class="work-card" href="assets/sample-h4.jpg" target="_blank" rel="noopener"><span class="work-frame"><img src="assets/sample-h4.jpg" alt="People care tracker"></span><p class="work-cap">People care tracker</p></a>
+      <a class="work-card" href="assets/sample-h5.jpg" target="_blank" rel="noopener"><span class="work-frame"><img src="assets/sample-h5.jpg" alt="Offboarding checklist"></span><p class="work-cap">Offboarding, done well</p></a>
+    </div>
+  </div>
+
+  <div class="work-row">
+    <div class="work-row-head"><span class="work-dot" style="background:#211E1A;"></span><span class="work-row-name">The operational engine</span></div>
+    <div class="work-grid">
+      <a class="work-card" href="assets/sample-o1.jpg" target="_blank" rel="noopener"><span class="work-frame"><img src="assets/sample-o1.jpg" alt="Executive weekly agenda"></span><p class="work-cap">Executive agenda</p></a>
+      <a class="work-card" href="assets/sample-o2.jpg" target="_blank" rel="noopener"><span class="work-frame"><img src="assets/sample-o2.jpg" alt="Weekly ops recap"></span><p class="work-cap">Weekly ops recap</p></a>
+      <a class="work-card" href="assets/sample-o3.jpg" target="_blank" rel="noopener"><span class="work-frame"><img src="assets/sample-o3.jpg" alt="Supplier tracker"></span><p class="work-cap">Supplier tracker</p></a>
+      <a class="work-card" href="assets/sample-o4.jpg" target="_blank" rel="noopener"><span class="work-frame"><img src="assets/sample-o4.jpg" alt="Travel itinerary"></span><p class="work-cap">Travel itinerary</p></a>
+      <a class="work-card" href="assets/sample-o5.jpg" target="_blank" rel="noopener"><span class="work-frame"><img src="assets/sample-o5.jpg" alt="Event production plan"></span><p class="work-cap">Event production plan</p></a>
     </div>
   </div>
 </section>
