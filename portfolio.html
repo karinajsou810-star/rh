@@ -98,6 +98,12 @@
   .exp-org{font-size:14px;font-weight:600;letter-spacing:0.05em;text-transform:uppercase;color:#9B7B5E;margin-bottom:4px}
   .exp-loc{font-size:13px;font-weight:600;letter-spacing:0.04em;color:#9B968B;margin-bottom:16px}
   .exp-desc{font-family:'Newsreader',serif;font-size:18px;line-height:1.6;color:#54504A;max-width:60ch}
+  .exp-stats{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid #DBD4C5;border-bottom:1px solid #DBD4C5;margin-bottom:8px}
+  .exp-stat{padding:30px 40px 30px 0;border-right:1px solid #DBD4C5}
+  .exp-stat:last-child{border-right:0}
+  .exp-stat:not(:first-child){padding-left:40px}
+  .exp-stat b{display:block;font-family:'Newsreader',serif;font-size:36px;font-weight:500;line-height:1;letter-spacing:-0.01em;color:#EC5A2A;margin-bottom:12px}
+  .exp-stat span{font-size:14px;line-height:1.5;color:#6B655B}
 
   /* journey */
   .journey{background:#F4F0E7;padding:110px 48px 120px;overflow:hidden;border-top:1px solid #E2DAC9}
@@ -159,6 +165,10 @@
     .skills-center{width:100%;order:-1}
     .exp{padding:64px 24px 60px}
     .exp-row{grid-template-columns:1fr;gap:10px;padding:28px 0}
+    .exp-stats{grid-template-columns:1fr}
+    .exp-stat{border-right:0;border-bottom:1px solid #DBD4C5;padding:22px 0}
+    .exp-stat:last-child{border-bottom:0}
+    .exp-stat:not(:first-child){padding-left:0}
     .journey{padding:64px 24px 72px}
     .jr-head{grid-template-columns:1fr;gap:20px;margin-bottom:60px}
     .jr-step{grid-template-columns:1fr;gap:36px}
@@ -264,7 +274,12 @@
 <!-- ============ EXPERIENCE ============ -->
 <section class="exp">
   <div class="eyebrow"><span class="ln"></span><span class="tx">The path so far</span></div>
-  <h2 class="h2" style="margin-bottom:60px">My <em>experience</em></h2>
+  <h2 class="h2" style="margin-bottom:44px">My <em>experience</em></h2>
+  <div class="exp-stats">
+    <div class="exp-stat"><b>13 years</b><span>across the People function, in four organisations</span></div>
+    <div class="exp-stat"><b>2 hrs &rarr; 10 min</b><span>monthly leave close, after rebuilding the system at Gil Ferreira</span></div>
+    <div class="exp-stat"><b>240 vacancies</b><span>worked in twelve months at Portugal's national employment agency</span></div>
+  </div>
   <div>
     <div class="exp-row">
       <div><div class="exp-year">2026</div><div class="exp-dates">Oct 2018 – Jun 2026</div></div>
@@ -272,7 +287,7 @@
         <h3 class="exp-role">Head of People &amp; Operations</h3>
         <p class="exp-org">Gil Ferreira</p>
         <p class="exp-loc">Lisbon, Portugal</p>
-        <p class="exp-desc">Responsible for the full operational backbone of the executive office, onboarding, supplier management, scheduling, reporting, and compliance.</p>
+        <p class="exp-desc">Held the operational backbone of an executive office: onboarding, suppliers, scheduling, reporting and compliance, with decision and spending authority.</p>
       </div>
     </div>
     <div class="exp-row">
@@ -281,7 +296,7 @@
         <h3 class="exp-role">Talent Acquisition Specialist</h3>
         <p class="exp-org">Institute for Employment and Vocational Training</p>
         <p class="exp-loc">Lisbon, Portugal</p>
-        <p class="exp-desc">Responsible for employer outreach, candidate screening, and intake process design within Portugal's national public employment agency, operating as part of a specialist recruitment team.</p>
+        <p class="exp-desc">Worked both sides of the hiring desk at Portugal's national employment agency: employer outreach and requirement analysis, candidate screening and shortlists, and the intake process design behind them.</p>
       </div>
     </div>
     <div class="exp-row">
@@ -290,7 +305,7 @@
         <h3 class="exp-role">HR &amp; People Operations Generalist</h3>
         <p class="exp-org">Riviera Center Hotel</p>
         <p class="exp-loc">Lisbon, Portugal</p>
-        <p class="exp-desc">Responsible for keeping the hotel and F&amp;B team aligned and operational, across scheduling, onboarding, cross-departmental communication, and seasonal coordination.</p>
+        <p class="exp-desc">Kept a hotel and F&amp;B operation aligned across scheduling, onboarding and cross-departmental communication, including the weekly rota for a ten-person floor.</p>
       </div>
     </div>
     <div class="exp-row">
@@ -299,7 +314,7 @@
         <h3 class="exp-role">Human Resources Administrator</h3>
         <p class="exp-org">Spark Elétrica Ltda</p>
         <p class="exp-loc">São Paulo, Brazil</p>
-        <p class="exp-desc">Responsible for HR documentation, supplier coordination, and client communication.</p>
+        <p class="exp-desc">HR documentation, supplier coordination and client communication at a B2B distributor selling to large accounts.</p>
       </div>
     </div>
   </div>
