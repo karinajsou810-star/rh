@@ -115,6 +115,9 @@
   .tst-quote::before{content:'\201C';display:block;font-size:46px;line-height:0.6;color:var(--merlot);margin-bottom:16px;font-style:normal;}
   .tst-who{font-family:'Times New Roman',Times,serif;font-style:italic;font-size:14px;color:rgba(240,232,220,0.55);}
   .tst-avatar{width:74px;height:74px;border-radius:50%;object-fit:cover;margin:0 auto 16px;display:block;border:1px solid rgba(240,232,220,0.22);}
+  .tst-card.feature{grid-column:1 / -1;}
+  .tst-initials{width:74px;height:74px;border-radius:50%;margin:0 auto 16px;display:flex;align-items:center;justify-content:center;background:#EC5A2A;color:#F4F0E7;font-family:'Source Sans 3',sans-serif;font-weight:600;font-size:23px;letter-spacing:.5px;}
+  .tst-who a{color:rgba(240,232,220,0.8);text-decoration:none;border-bottom:1px solid rgba(240,232,220,0.3);}
   @media(max-width:900px){#testimonials{padding:60px 28px 68px;}.tst-cards{grid-template-columns:1fr;}.tst-title{font-size:32px;}}
 
   /* ── CONTACT SECTION ── */
@@ -338,6 +341,12 @@
       <h2 class="tst-title">What are <em>they saying?</em></h2>
     </div>
     <div class="tst-cards">
+
+      <div class="tst-card feature">
+        <p class="tst-quote">Over a period of roughly eight years, Karina worked for me, managing my affairs in Lisbon, while I reside permanently in Oxford. She essentially functioned as an “autonomous unit”, dealing with not only the usual day to day running of my household affairs but also, and crucially, trouble-shooting and problem solving whenever issues came up. She was an exceptionally dedicated employee and I was lucky to have her.</p>
+        <div class="tst-initials">PF</div>
+        <p class="tst-who">Pedro G. Ferreira<br>Head of Astrophysics, University of Oxford<br><a href="https://www.pedroferreira.co.uk" target="_blank" rel="noopener">pedroferreira.co.uk</a></p>
+      </div>
 
       <div class="tst-card">
         <p class="tst-quote">I worked alongside Karina for years and I have never met anyone this organized. Schedules, communication, follow-ups: everything planned, nothing forgotten. People trusted her with their entire routine because she never dropped a single thing. She treats the work as if it were her own.</p>
