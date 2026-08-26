@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Karina Souza">
+  <rect width="64" height="64" rx="16" fill="#211E1A"/>
+  <circle cx="52" cy="12" r="13" fill="#EC5A2A"/>
+  <path d="M18 14v36M18 33l24-19M18 33l25 17" fill="none" stroke="#F4F0E7" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
