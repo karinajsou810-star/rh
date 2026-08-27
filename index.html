@@ -29,6 +29,8 @@
   .navlink:hover{opacity:.6;}
   .herobtn:hover{background:#D44E22 !important; transform:translateY(-2px);}
   .aboutbtn:hover{opacity:.88;}
+  .mobile-nav-cta{display:none;}
+  .hero-sub{font-family:'Newsreader',serif;font-size:23px;font-weight:400;line-height:1.46;color:#EAD7CE;margin:20px 0 0;max-width:860px;text-shadow:0 2px 20px rgba(20,12,16,0.45);}
 
   /* ── CASES SECTION ── */
   .cs-top{padding:64px 60px 48px;background:var(--silence);border-bottom:0.5px solid var(--line);}
@@ -75,9 +77,16 @@
   @media(max-width:800px){
     .topnav .links{display:none !important;}
     .topnav{padding:20px 22px !important;}
+    .mobile-nav-cta{display:inline-flex;align-items:center;justify-content:center;color:#F4F0E7;text-decoration:none;border:1px solid rgba(244,240,231,0.72);border-radius:3px;padding:10px 14px;font-family:'Questrial',sans-serif;font-size:10px;letter-spacing:1.4px;text-transform:uppercase;}
     .hero-content{justify-content:flex-start !important;min-height:auto !important;padding:118px 24px 48px !important;}
     .hero-h1{font-size:31px !important;line-height:1.16 !important;margin-top:18px !important;}
-    .about-grid{grid-template-columns:1fr !important;}
+    .hero-sub{font-size:18px;line-height:1.42;margin-top:18px;max-width:34ch;}
+    .hero-actions{width:100%;flex-direction:column;gap:12px !important;margin-top:26px !important;}
+    .hero-actions .herobtn,.hero-actions .hero-secondary{width:100%;max-width:342px;white-space:normal !important;justify-content:center;text-align:center;}
+    .hero-actions .herobtn{font-size:12.5px !important;letter-spacing:1.2px !important;padding:15px 20px !important;}
+    .hero-actions .hero-secondary{font-size:12px !important;letter-spacing:1.2px !important;padding:14px 20px !important;}
+    .about-grid{grid-template-columns:minmax(0,1fr) !important;width:100% !important;max-width:100% !important;}
+    .about-grid > div{min-width:0;}
     #about{padding:56px 22px !important;}
     #about div[style*="font-size:92px"]{font-size:54px !important; letter-spacing:0 !important;}
     #about div[style*="font-size:38px"]{font-size:28px !important;}
@@ -198,12 +207,13 @@
       <a href="index.html" style="font-family:'Newsreader',serif; font-style:italic; font-size:26px; color:#F4F0E7; text-decoration:none;">Karina Souza</a>
       <div class="links" style="display:flex; align-items:center; gap:28px; font-family:'Questrial',sans-serif; font-size:12.5px; letter-spacing:1.8px; text-transform:uppercase;">
         <a class="navlink" href="#about" style="color:#F4F0E7; text-decoration:none;">About</a>
-        <a class="navlink" href="portfolio.html" style="color:#F4F0E7; text-decoration:none;">Portfolio</a>
+        <a class="navlink" href="portfolio.html" style="color:#F4F0E7; text-decoration:none;">Experience</a>
         <a class="navlink" href="services.html" style="color:#F4F0E7; text-decoration:none;">Services</a>
         <a class="navlink" href="#cases" style="color:#F4F0E7; text-decoration:none;">Case studies</a>
         <a class="navlink" href="contact.html" style="color:#F4F0E7; text-decoration:none;">Contact</a>
         <a class="navlink" href="https://calendly.com/karinajsou810/new-meeting" target="_blank" rel="noopener" style="color:#F4F0E7; text-decoration:none;">Book a call</a>
       </div>
+      <a class="mobile-nav-cta" href="https://calendly.com/karinajsou810/new-meeting" target="_blank" rel="noopener">Book a call</a>
     </nav>
     <img src="assets/karina-hero-v4.jpg" alt="Karina Souza" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:50% 30%;">
     <div style="position:absolute; inset:0; background:linear-gradient(180deg, rgba(120,150,180,0.10) 0%, rgba(70,30,44,0.10) 100%); mix-blend-mode:multiply;"></div>
@@ -218,14 +228,15 @@
       </div>
 
       <h1 class="hero-h1" style="font-family:'Marcellus', serif; font-weight:400; font-size:41px; line-height:1.24; letter-spacing:-0.3px; color:#F4F0E7; margin:24px 0 0 0; max-width:1000px; text-shadow:0 2px 24px rgba(20,12,16,0.45);">
-        I turn complex, high-trust operations into clear ownership, reliable follow-through and fewer open loops.<br><span style="font-family:'Newsreader',serif; font-style:italic; font-weight:400; color:#EAD7CE;">From executive coordination and workforce continuity to vendors and workflow improvement, I bring structure to the work behind the work and carry it through to completion.</span>
+        Complex operations, clearly handled.
       </h1>
-      <div style="margin-top:34px; display:flex; align-items:center; gap:24px; flex-wrap:wrap; justify-content:center;">
+      <p class="hero-sub">I take the moving pieces off your plate. I organise priorities, coordinate people and service providers, improve day-to-day processes and make sure the work gets finished.</p>
+      <div class="hero-actions" style="margin-top:34px; display:flex; align-items:center; gap:24px; flex-wrap:wrap; justify-content:center;">
         <a class="herobtn" href="https://calendly.com/karinajsou810/new-meeting" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:12px; background:#EC5A2A; color:#F4F0E7; font-family:'Questrial',sans-serif; font-size:14.5px; letter-spacing:1.6px; text-transform:uppercase; white-space:nowrap; text-decoration:none; padding:17px 36px; border-radius:3px; box-shadow:0 14px 34px -14px rgba(212,78,34,0.55); transition:background .25s ease, transform .25s ease;">
-          Discuss an operational bottleneck
+          Discuss an operations challenge
           <span style="font-size:16px; line-height:1; transform:translateY(0.5px);">&#8594;</span>
         </a>
-        <a class="navlink" href="https://dynamic-bugle-a10.notion.site/Karina-Souza-Business-Operations-Case-Studies-Evidence-3c784d0cf60881fda186f1b94b634226" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:10px; color:#F4F0E7; font-family:'Questrial',sans-serif; font-size:13.5px; letter-spacing:1.5px; text-transform:uppercase; white-space:nowrap; text-decoration:none; padding:16px 28px; border:1px solid rgba(244,240,231,0.72); border-radius:3px;">
+        <a class="navlink hero-secondary" href="https://dynamic-bugle-a10.notion.site/Karina-Souza-Business-Operations-Case-Studies-Evidence-3c784d0cf60881fda186f1b94b634226" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:10px; color:#F4F0E7; font-family:'Questrial',sans-serif; font-size:13.5px; letter-spacing:1.5px; text-transform:uppercase; white-space:nowrap; text-decoration:none; padding:16px 28px; border:1px solid rgba(244,240,231,0.72); border-radius:3px;">
           View evidence portfolio <span aria-hidden="true">&#8599;</span>
         </a>
       </div>
@@ -303,7 +314,7 @@
       <p class="serif">That's where I learned the part of the job I value most: <strong>figuring things out</strong>.</p>
       <p class="serif">Knowing what needs attention, deciding what can wait. Bringing the right people in, solving the problem. And following it through until it's actually done.</p>
       <p class="serif" style="margin-bottom:34px">Today, that's what I bring to every environment I work in: <strong>calm</strong> when things get busy, <strong>structure</strong> when things get messy and <strong>ownership</strong> when something needs to move.</p>
-      <a class="btn" href="portfolio.html">See my portfolio <span style="font-size:18px">→</span></a>
+      <a class="btn" href="portfolio.html">Explore my experience <span style="font-size:18px">→</span></a>
     </div>
   </div>
 </section>
@@ -329,8 +340,8 @@
         </a>
 
         <a class="insights-card case-card" href="cases/case-03.html">
-          <span class="insights-meta">Vendor operations &middot; Project delivery &middot; Quality control</span>
-          <p class="insights-headline">Creating <em style="font-style:italic;color:var(--merlot);">one accountable control point</em> across seven recurring providers and multiple project-based vendors.</p>
+          <span class="insights-meta">Service provider coordination &middot; Project delivery &middot; Quality control</span>
+          <p class="insights-headline">Creating <em style="font-style:italic;color:var(--merlot);">one accountable control point</em> for seven recurring providers and multiple project-based service providers.</p>
           <span class="insights-readmore">Read case ↗</span>
         </a>
 
