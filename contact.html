@@ -9,12 +9,12 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://karinajsou810-star.github.io/rh/contact.html">
 <meta property="og:title" content="Contact · Karina Souza | Business Operations">
-<meta property="og:description" content="Discuss an operational bottleneck, recurring workflow or executive-support challenge with Karina Souza.">
+<meta property="og:description" content="Discuss an operations challenge, recurring workflow or executive-support need with Karina Souza.">
 <meta property="og:image" content="https://karinajsou810-star.github.io/rh/assets/karina-souza-og.png">
 <meta property="og:image:alt" content="Karina Souza · Business and Executive Operations">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Contact · Karina Souza | Business Operations">
-<meta name="twitter:description" content="Discuss an operational bottleneck, recurring workflow or executive-support challenge with Karina Souza.">
+<meta name="twitter:description" content="Discuss an operations challenge, recurring workflow or executive-support need with Karina Souza.">
 <meta name="twitter:image" content="https://karinajsou810-star.github.io/rh/assets/karina-souza-og.png">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -206,6 +206,11 @@
   .contact-note{font-size:13px;font-weight:300;color:var(--gray);line-height:1.6;max-width:440px;}
   .contact-note a{color:var(--merlot);text-decoration:none;border-bottom:0.5px solid rgba(92,26,30,0.3);padding-bottom:1px;}
   .contact-note a:hover{border-color:var(--merlot);}
+  .contact-actions{display:flex;flex-wrap:wrap;gap:12px;margin:26px 0 30px;}
+  .contact-action{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 22px;text-decoration:none;font-family:'Source Sans Pro',sans-serif;font-size:11px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;border:1px solid var(--merlot);transition:background .2s,color .2s;}
+  .contact-action.primary{background:var(--merlot);color:var(--silence);}
+  .contact-action.secondary{background:transparent;color:var(--merlot);}
+  .contact-action:hover{background:#D44E22;color:var(--silence);border-color:#D44E22;}
   @media(max-width:800px){.contact-grid{grid-template-columns:1fr;}.contact-photo{height:420px;}.contact-content{padding:48px 28px;}.contact-title{font-size:38px;}.contact-fields{grid-template-columns:1fr;}}
   :root{--silence:#F4F0E7;--ice:#C7D4DC;--merlot:#EC5A2A;--ink:#211E1A;--line:#E2DAC9;--gray:#8A8478;--body:#54504A;--off:#FBF8F1;}
 </style>
@@ -217,7 +222,7 @@
   <div class="top-links">
     <a href="index.html">Home</a>
     <a href="index.html#about">About</a>
-    <a href="portfolio.html">Portfolio</a>
+    <a href="portfolio.html">Experience</a>
     <a href="services.html">Services</a>
     <a href="index.html#cases">Case studies</a>
     <a href="contact.html">Contact</a>
@@ -233,15 +238,14 @@
       </div>
       <div class="contact-content">
         <p class="contact-eyebrow">Let's talk</p>
-        <h2 class="contact-title">Get<br>in <em>touch.</em></h2>
+        <h1 class="contact-title">Get<br>in <em>touch.</em></h1>
 
-        <!-- FORM: replace YOUR_FORM_ID with your Formspree form id to activate delivery -->
-        <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-          <input type="text" name="name" placeholder="Your name" required>
-          <input type="email" name="email" placeholder="Your email" required>
-          <textarea name="message" placeholder="What would you like help with?" required></textarea>
-          <button type="submit">Send message</button>
-        </form>
+        <p class="contact-note" style="font-size:16px;color:var(--body);max-width:46ch;">Tell me what feels complex, stuck or too dependent on you. I will tell you where I can help and what a practical next step could look like.</p>
+
+        <div class="contact-actions">
+          <a class="contact-action primary" href="https://calendly.com/karinajsou810/new-meeting" target="_blank" rel="noopener">Book a conversation &#8599;</a>
+          <a class="contact-action secondary" href="mailto:karina.jeronimo@hotmail.com">Email Karina &#8594;</a>
+        </div>
 
         <div class="contact-social">
           <a href="mailto:karina.jeronimo@hotmail.com" aria-label="Email Karina">
@@ -252,7 +256,7 @@
           </a>
         </div>
 
-        <p class="contact-note">Working with startups, small companies, and growing teams. Prefer to talk live? <a href="https://calendly.com/karinajsou810/new-meeting" target="_blank" rel="noopener">Book a free fit call ↗</a></p>
+        <p class="contact-note">Working with startups, small companies and growing teams. Based in Lisbon and open to remote, hybrid and international work.</p>
       </div>
     </div>
   </section>

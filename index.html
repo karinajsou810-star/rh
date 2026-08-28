@@ -31,6 +31,15 @@
   .aboutbtn:hover{opacity:.88;}
   .mobile-nav-cta{display:none;}
   .hero-sub{font-family:'Newsreader',serif;font-size:23px;font-weight:400;line-height:1.46;color:#EAD7CE;margin:20px 0 0;max-width:860px;text-shadow:0 2px 20px rgba(20,12,16,0.45);}
+  .proofbar{background:var(--silence);border-bottom:0.5px solid var(--line);font-family:'Source Sans 3',sans-serif;}
+  .proofbar-inner{max-width:1240px;margin:0 auto;padding:28px 60px 30px;}
+  .proofbar-label{font-size:9px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--gray);margin-bottom:18px;}
+  .proofbar-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));}
+  .proofbar-item{padding:0 28px;border-right:0.5px solid var(--line);min-width:0;}
+  .proofbar-item:first-child{padding-left:0;}
+  .proofbar-item:last-child{padding-right:0;border-right:0;}
+  .proofbar-value{display:block;font-family:'Newsreader',serif;font-size:27px;line-height:1;color:var(--merlot);margin-bottom:8px;}
+  .proofbar-copy{display:block;font-size:12px;line-height:1.45;color:var(--body);}
 
   /* ── CASES SECTION ── */
   .cs-top{padding:64px 60px 48px;background:var(--silence);border-bottom:0.5px solid var(--line);}
@@ -85,6 +94,13 @@
     .hero-actions .herobtn,.hero-actions .hero-secondary{width:100%;max-width:342px;white-space:normal !important;justify-content:center;text-align:center;}
     .hero-actions .herobtn{font-size:12.5px !important;letter-spacing:1.2px !important;padding:15px 20px !important;}
     .hero-actions .hero-secondary{font-size:12px !important;letter-spacing:1.2px !important;padding:14px 20px !important;}
+    .proofbar-inner{padding:26px 22px 28px;}
+    .proofbar-grid{grid-template-columns:1fr 1fr;}
+    .proofbar-item{padding:18px 16px;border-bottom:0.5px solid var(--line);}
+    .proofbar-item:nth-child(odd){padding-left:0;}
+    .proofbar-item:nth-child(even){padding-right:0;border-right:0;}
+    .proofbar-item:nth-child(n+3){border-bottom:0;}
+    .proofbar-value{font-size:23px;}
     .about-grid{grid-template-columns:minmax(0,1fr) !important;width:100% !important;max-width:100% !important;}
     .about-grid > div{min-width:0;}
     #about{padding:56px 22px !important;}
@@ -177,6 +193,11 @@
   .contact-note{font-size:13px;font-weight:300;color:var(--gray);line-height:1.6;max-width:440px;}
   .contact-note a{color:var(--merlot);text-decoration:none;border-bottom:0.5px solid rgba(92,26,30,0.3);padding-bottom:1px;}
   .contact-note a:hover{border-color:var(--merlot);}
+  .contact-actions{display:flex;flex-wrap:wrap;gap:12px;margin:26px 0 30px;}
+  .contact-action{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 22px;text-decoration:none;font-family:'Source Sans Pro',sans-serif;font-size:11px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;border:1px solid var(--merlot);transition:background .2s,color .2s;}
+  .contact-action.primary{background:var(--merlot);color:var(--silence);}
+  .contact-action.secondary{background:transparent;color:var(--merlot);}
+  .contact-action:hover{background:#D44E22;color:var(--silence);border-color:#D44E22;}
   @media(max-width:800px){.contact-grid{grid-template-columns:1fr;}.contact-photo{height:420px;}.contact-content{padding:48px 28px;}.contact-title{font-size:38px;}.contact-fields{grid-template-columns:1fr;}}
   #insights{background:var(--silence);border-top:0.5px solid var(--line);}
   .insights-grid{display:grid;grid-template-columns:1fr;min-height:0;}
@@ -196,6 +217,7 @@
   .case-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;}
   .case-card{display:flex;flex-direction:column;gap:0;}
   .case-card .insights-headline{font-size:18.5px;flex:1;}
+  .case-proof{display:block;font-size:10px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--gray);border-top:0.5px solid var(--line);padding-top:14px;margin:2px 0 18px;line-height:1.55;}
   @media(max-width:900px){.cases2{padding:48px 28px 36px;}.case-cards{grid-template-columns:1fr;}}
 </style>
 </head>
@@ -243,7 +265,18 @@
     </div>
   </section>
 
-  
+  <section class="proofbar" aria-labelledby="proofbar-title">
+    <div class="proofbar-inner">
+      <p class="proofbar-label" id="proofbar-title">Evidence-backed operating scale</p>
+      <div class="proofbar-grid">
+        <div class="proofbar-item"><span class="proofbar-value">7+ years</span><span class="proofbar-copy">of high-trust operational ownership</span></div>
+        <div class="proofbar-item"><span class="proofbar-value">7 recurring</span><span class="proofbar-copy">service providers coordinated</span></div>
+        <div class="proofbar-item"><span class="proofbar-value">~5 per day</span><span class="proofbar-copy">individual pre-screening interviews</span></div>
+        <div class="proofbar-item"><span class="proofbar-value">100+ in ~1 week</span><span class="proofbar-copy">partner organisations contacted and data remediated</span></div>
+      </div>
+    </div>
+  </section>
+
 
   <!-- ===== ABOUT ===== -->
   <section id="about" style="width:100%;  background:#F4F0E7; display:flex; align-items:center; justify-content:center; padding:72px 40px; font-family:'Source Sans Pro', sans-serif;">
@@ -310,7 +343,7 @@
       <p class="serif">My career didn't follow one straight line. It moved through <strong>hospitality</strong>, <strong>operations</strong>, <strong>executive support</strong> and <strong>talent acquisition</strong>, but each experience added a different layer to how I work today.</p>
       <p class="serif">Working in hospitality taught me how to stay composed when things get busy, adapt quickly and keep service moving even when several things need attention at once.</p>
       <p class="serif">Working in talent acquisition and employment services taught me to look at both sides of the equation: understand what an organisation actually needs, assess candidates against those requirements and keep the process moving from vacancy to the right match. Working with a high volume of candidates and employers also sharpened my judgement, communication and ability to make decisions with incomplete information.</p>
-      <p class="serif">Then came several years in a <strong>private executive office</strong>, where I worked with a high degree of autonomy across schedules, travel, suppliers, teams, processes and day-to-day operations. It was an environment where priorities could change quickly and there wasn't always a playbook to follow.</p>
+      <p class="serif">Then came several years in a <strong>private executive office</strong>, where I worked with a high degree of autonomy across schedules, travel, service providers, teams, processes and day-to-day operations. It was an environment where priorities could change quickly and there wasn't always a playbook to follow.</p>
       <p class="serif">That's where I learned the part of the job I value most: <strong>figuring things out</strong>.</p>
       <p class="serif">Knowing what needs attention, deciding what can wait. Bringing the right people in, solving the problem. And following it through until it's actually done.</p>
       <p class="serif" style="margin-bottom:34px">Today, that's what I bring to every environment I work in: <strong>calm</strong> when things get busy, <strong>structure</strong> when things get messy and <strong>ownership</strong> when something needs to move.</p>
@@ -329,25 +362,29 @@
 
         <a class="insights-card case-card" href="cases/case-01.html">
           <span class="insights-meta">Business operations &middot; Capacity planning &middot; Exception management</span>
-          <p class="insights-headline">Turning recurring 15-day demand surges into <em style="font-style:italic;color:var(--merlot);">a controlled operating model</em>, with workforce, procurement and supplier capacity aligned.</p>
+          <p class="insights-headline">Coordinating recurring and peak operating periods across changing headcount, procurement, service providers, deadlines and last-minute exceptions.</p>
+          <span class="case-proof">Real operations &middot; approximately 14 people at peak &middot; 30-minute late change</span>
           <span class="insights-readmore">Read case ↗</span>
         </a>
 
         <a class="insights-card case-card" href="cases/case-02.html">
           <span class="insights-meta">Workforce operations &middot; Onboarding &middot; Business continuity</span>
-          <p class="insights-headline">Building operational readiness in three days and protecting critical coverage throughout <em style="font-style:italic;color:var(--merlot);">a 30-day absence.</em></p>
+          <p class="insights-headline">Preparing two trusted backup resources through approximately three days of practical onboarding and supporting continuity through extended absences.</p>
+          <span class="case-proof">2 recurring backups &middot; approximately 3 days onboarding &middot; up to approximately 30 days coverage</span>
           <span class="insights-readmore">Read case ↗</span>
         </a>
 
         <a class="insights-card case-card" href="cases/case-03.html">
           <span class="insights-meta">Service provider coordination &middot; Project delivery &middot; Quality control</span>
-          <p class="insights-headline">Creating <em style="font-style:italic;color:var(--merlot);">one accountable control point</em> for seven recurring providers and multiple project-based service providers.</p>
+          <p class="insights-headline">Controlling five real service-provider and project workstreams from scope and scheduling through quality review, corrective action and verified closure.</p>
+          <span class="case-proof">5 workstreams &middot; 2 missed commitments recovered &middot; no additional corrective-work payment</span>
           <span class="insights-readmore">Read case ↗</span>
         </a>
 
         <a class="insights-card case-card" href="cases/case-04.html">
           <span class="insights-meta">Process improvement &middot; Expense control &middot; Operational visibility</span>
-          <p class="insights-headline">Consolidating three fragmented sources of expense information into <em style="font-style:italic;color:var(--merlot);">one structured monthly control system.</em></p>
+          <p class="insights-headline">Turning handwritten notebook entries, loose receipts and manual totals into a categorised monthly expense control maintained from 2018 onward.</p>
+          <span class="case-proof">Historical process improvement &middot; clearer reconciliation &middot; non-routine spend visible</span>
           <span class="insights-readmore">Read case ↗</span>
         </a>
 
@@ -407,13 +444,12 @@
         <p class="contact-eyebrow">Let's talk</p>
         <h2 class="contact-title">Get<br>in <em>touch.</em></h2>
 
-        <!-- FORM: replace YOUR_FORM_ID with your Formspree form id to activate delivery -->
-        <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-          <input type="text" name="name" placeholder="Your name" required>
-          <input type="email" name="email" placeholder="Your email" required>
-          <textarea name="message" placeholder="What would you like help with?" required></textarea>
-          <button type="submit">Send message</button>
-        </form>
+        <p class="contact-note" style="font-size:16px;color:var(--body);max-width:46ch;">Tell me what feels complex, stuck or too dependent on you. I will tell you where I can help and what a practical next step could look like.</p>
+
+        <div class="contact-actions">
+          <a class="contact-action primary" href="https://calendly.com/karinajsou810/new-meeting" target="_blank" rel="noopener">Book a conversation &#8599;</a>
+          <a class="contact-action secondary" href="mailto:karina.jeronimo@hotmail.com">Email Karina &#8594;</a>
+        </div>
 
         <div class="contact-social">
           <a href="mailto:karina.jeronimo@hotmail.com" aria-label="Email Karina">
@@ -424,7 +460,7 @@
           </a>
         </div>
 
-        <p class="contact-note">Working with startups, small companies, and growing teams. Prefer to talk live? <a href="https://calendly.com/karinajsou810/new-meeting" target="_blank" rel="noopener">Book a free fit call ↗</a></p>
+        <p class="contact-note">Working with startups, small companies and growing teams. Based in Lisbon and open to remote, hybrid and international work.</p>
       </div>
     </div>
   </section>
