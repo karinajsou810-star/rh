@@ -59,8 +59,9 @@
   .intro p.serif{font-size:18px;margin-bottom:18px;max-width:52ch}
 
   /* vision */
-  .vision{max-width:1180px;margin:0 auto;padding:120px 48px 110px}
-  .vision-grid{display:grid;grid-template-columns:1.1fr 0.9fr;gap:90px;align-items:start}
+  .vision{width:100%;margin:0;padding:0}
+  .vision-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;align-items:stretch}
+  .vision-copy{padding:92px clamp(48px,6vw,96px);display:flex;flex-direction:column;justify-content:center}
   .vision p.serif{font-size:20px;margin-bottom:22px;max-width:52ch}
   .divider{height:1px;background:#DBD4C5;margin:48px 0 40px}
   .values-title{font-size:15px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:#211E1A;margin-bottom:30px}
@@ -68,11 +69,9 @@
   .value .dm{flex:none;width:9px;height:9px;background:#EC5A2A;transform:rotate(45deg);margin-top:9px}
   .value p{font-family:'Newsreader',serif;font-size:18px;line-height:1.55;color:#54504A}
   .value strong{font-family:'Bricolage Grotesque',sans-serif;font-weight:700;color:#211E1A}
-  .vision-photo{position:relative;display:flex;justify-content:center;padding-top:10px}
-  .vision-wrap{position:relative;width:400px;max-width:100%}
-  .vision-blob{position:absolute;inset:20px -18px -18px 20px;background:#C7D4DC;border-radius:22px}
-  .vision-organic{position:relative;z-index:1;width:100%;border-radius:20px;overflow:hidden;box-shadow:0 24px 50px -24px rgba(33,30,26,0.45)}
-  .vision-organic img{width:100%;height:auto;display:block}
+  .vision-photo{min-height:900px;overflow:hidden;position:relative}
+  .vision-wrap,.vision-organic{width:100%;height:100%}
+  .vision-organic img{width:100%;height:100%;object-fit:cover;object-position:center 18%;display:block}
 
   /* skills */
   .skills{background:#ECE5D6;padding:100px 48px 110px}
@@ -80,7 +79,7 @@
   .skills-lede{font-family:'Newsreader',serif;font-size:23px;line-height:1.5;color:#3F3B35;max-width:34ch;margin:28px 0 64px}
   .skills-lede .mut{color:#9B968B}
   .skills-lede em{font-style:italic;color:#EC5A2A}
-  .skills-grid{display:grid;grid-template-columns:1fr auto 1fr;gap:56px;align-items:start}
+  .skills-grid{display:grid;grid-template-columns:minmax(0,1fr) 280px minmax(0,1fr);gap:56px;align-items:start}
   .axis-head{display:flex;align-items:center;gap:12px;margin-bottom:14px}
   .axis-dot{width:11px;height:11px;border-radius:50%}
   .axis-name{font-size:13px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#211E1A}
@@ -89,9 +88,10 @@
   .skill-num{font-family:'Newsreader',serif;font-style:italic;font-size:42px;font-weight:500;line-height:0.85}
   .skill h4{font-size:20px;font-weight:700;letter-spacing:-0.01em;margin-bottom:5px}
   .skill p{font-family:'Newsreader',serif;font-size:16px;line-height:1.5;color:#6B655B}
-  .skills-center{position:relative;display:flex;flex-direction:column;align-items:center;width:280px;align-self:center}
-  .skills-frame{position:absolute;inset:18px -14px auto 14px;height:calc(100% - 60px);border-radius:24px;border:2px solid #EC5A2A}
-  .skills-photo{position:relative;z-index:1;width:100%;margin-top:10px;border-radius:20px;overflow:hidden;box-shadow:0 20px 44px -22px rgba(33,30,26,0.5)}
+  .skills-center{display:flex;flex-direction:column;align-items:center;width:280px;align-self:start}
+  .skills-photo-wrap{position:relative;width:100%;padding-top:10px;margin-top:0}
+  .skills-frame{position:absolute;inset:28px -14px -14px 14px;border-radius:24px;border:2px solid #EC5A2A}
+  .skills-photo{position:relative;z-index:1;width:100%;border-radius:20px;overflow:hidden;box-shadow:0 20px 44px -22px rgba(33,30,26,0.5)}
   .skills-photo img{width:100%;height:auto;display:block}
   .skills-caption{position:relative;z-index:1;font-family:'Newsreader',serif;font-style:italic;font-size:17px;line-height:1.4;color:#5C5750;text-align:center;margin-top:24px;max-width:24ch}
 
@@ -173,12 +173,13 @@
     .intro-blob{width:320px;height:400px}
     .intro-arch{width:290px;height:390px}
     .h2{font-size:38px}
-    .vision{padding:70px 24px 60px}
-    .vision-grid{grid-template-columns:1fr;gap:56px}
-    .vision-wrap{width:100%}
+    .vision-grid{grid-template-columns:1fr}
+    .vision-copy{padding:58px 24px 64px}
+    .vision-photo{order:-1;height:480px;min-height:0}
+    .vision-organic img{object-position:center 18%}
     .skills{padding:64px 24px 70px}
     .skills-grid{grid-template-columns:1fr;gap:48px}
-    .skills-center{width:100%;order:-1}
+    .skills-center{width:min(100%,420px);order:-1;justify-self:center}
     .exp{padding:64px 24px 60px}
     .exp-row{grid-template-columns:1fr;gap:10px;padding:28px 0}
     .exp-stats{grid-template-columns:1fr}
@@ -213,9 +214,9 @@
 
 <!-- ============ VISION & VALUES ============ -->
 <section class="vision" id="vision">
-  <div class="eyebrow"><span class="ln"></span><span class="tx">What I stand for</span></div>
   <div class="vision-grid">
-    <div>
+    <div class="vision-copy">
+      <div class="eyebrow"><span class="ln"></span><span class="tx">What I stand for</span></div>
       <h1 class="h2" style="margin-bottom:30px">Good support creates <em>space.</em></h1>
       <p class="serif">When priorities are clear, details are handled and people know what comes next, leaders can focus on the work that only they can do.</p>
       <p class="serif">That's the kind of support I aim to provide: quietly reliable, proactive and thorough enough that things keep moving without constant oversight.</p>
@@ -232,8 +233,6 @@
     </div>
     <div class="vision-photo">
       <div class="vision-wrap">
-        <div class="vision-blob"></div>
-        <svg width="26" height="26" viewBox="0 0 24 24" fill="#EC5A2A" style="position:absolute;top:-14px;right:-14px;z-index:2"><path d="M12 2 L14 10 L22 12 L14 14 L12 22 L10 14 L2 12 L10 10 Z"></path></svg>
         <div class="vision-organic"><img src="assets/karina-vision.jpg" alt="Karina Souza"></div>
       </div>
     </div>
@@ -257,9 +256,11 @@
         <div class="skill"><span class="skill-num" style="color:#EC5A2A">05</span><div><h4>Confidential support</h4><p>Trusted with sensitive information, financial matters, personal affairs and high-stakes details.</p></div></div>
       </div>
       <div class="skills-center">
-        <div class="skills-frame"></div>
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="#EC5A2A" style="position:absolute;top:2px;right:6px;z-index:2"><path d="M12 2 L14 10 L22 12 L14 14 L12 22 L10 14 L2 12 L10 10 Z"></path></svg>
-        <div class="skills-photo"><img src="assets/karina-insight.jpg" alt="Karina Souza"></div>
+        <div class="skills-photo-wrap">
+          <div class="skills-frame"></div>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="#EC5A2A" style="position:absolute;top:2px;right:6px;z-index:2"><path d="M12 2 L14 10 L22 12 L14 14 L12 22 L10 14 L2 12 L10 10 Z"></path></svg>
+          <div class="skills-photo"><img src="assets/karina-insight.jpg" alt="Karina Souza"></div>
+        </div>
         <p class="skills-caption">Where priorities, people and operations meet. That's where I work.</p>
       </div>
       <div>
